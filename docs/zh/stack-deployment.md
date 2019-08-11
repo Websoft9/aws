@@ -1,51 +1,48 @@
 # 部署镜像
 
-Websoft9已经在 Azure Marketplace 上提供了多款镜像（**Azure的映像就是镜像**），覆盖常用的云场景，已经收到用户的良好反馈。
+Websoft9已经在 AWS Marketplace 上提供了多款镜像（**AWS称镜像为AMI**），覆盖常用的云场景，已经收到用户的良好反馈。
 
->  是不是想了解有哪些优质的镜像呢？点击 [此处](https://azuremarketplace.microsoft.com/en-us/marketplace/apps?page=1&search=websoft9) 查看Websoft9在Azure上发布的所有镜像。
+>  是不是想了解有哪些优质的镜像呢？点击 [此处](https://aws.amazon.com/marketplace/seller-profile?id=c639a579-182c-4d30-8578-4d4d89fba658) 查看Websoft9在AWS上发布的所有镜像。
 
-那么如何在Azure上使用这些镜像呢？有三种方法：
+那么如何在AWS上使用这些镜像呢？有两种方法：
 
 ## Marketplace部署
 
-1. 访问 [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps) 网站
+1. 访问 [AWS Marketplace](https://aws.amazon.com/marketplace) 网站
 
 2. 搜索关键字"websoft9"，网站会列出所有相关的镜像
-   ![搜索Websoft9镜像](https://libs.websoft9.com/Websoft9/DocsPicture/en/azure/azure-mkss-websoft9.png)
+   ![搜索Websoft9镜像](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-mkss-websoft9.png)  
 
-   
+3. 点击您所需的产品，进入产品详情页后点击"Continue to Subscribe"按钮开始订阅镜像
+   ![开始订阅镜像](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-rs-websoft9.png)
 
-3. 点击您所需的产品，进入产品详情页后点击"GET IT NOW"按钮
-   ![安装镜像](https://libs.websoft9.com/Websoft9/DocsPicture/en/azure/azure-rs-websoft9.png)
-
-4. 点击“创建”按钮，开始创建与镜像配套的虚拟机
-   ![1564797106741](https://libs.websoft9.com/Websoft9/DocsPicture/zh/azure/azure-imagecreate-websoft9.png)
-5. 在虚拟机的映像信息栏中，你会看到已经显示的你选择的镜像
-   ![1564797278339](https://libs.websoft9.com/Websoft9/DocsPicture/zh/azure/azure-imagevm-websoft9.png)
-6. 虚拟机创建完成后，镜像会作为虚拟机的系统盘启动，即镜像自动部署到虚拟机了
-
-
-
-## Portal部署
-
-1. 登录到Azure后台门户（Portal），点击“创建资源”，等同于通过后台进入Marketplace
-2. 搜索关键字“websoft9”，列出所有相关镜像
-   ![image.png](https://libs.websoft9.com/Websoft9/DocsPicture/zh/azure/azure-portalmk-websoft9.png)
-3. 点击你所需的产品，开始订阅镜像
+4. 根据系统提示，接受许可协议（Terms and Conditions）
+5. 待系统提示订阅成功后，点击“Continue to Configuration” 准备EC2创建前的检查
+   ![配置镜像](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-cc-websoft9.png)
+5. 检查镜像、版本和地区无误后，点击“Continue to Launch”开始创建EC2
+   ![开始载入镜像](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-imagecreate-websoft9.png)
+6. 创建EC2过程中，系统会提示您选择三种后续动作
+   ![开始载入镜像](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-imagecreate2-websoft9.png)
+   - Launch through EC2 （推荐）
+   - Launch from Website
+   - Copy to Service Catlog
+7. 后续动作基本都会要求用户完成：选择实例类型、VPC、Key Pair等设置
+8. 等待几分钟，EC2创建完成后，镜像会作为EC2实例的系统盘启动，即镜像自动部署到实例中
 
 
+## EC2部署
 
-## VM部署
-
-1. 登录到Azure后台门户（Portal），点击“虚拟机”，
-   ![image.png](https://libs.websoft9.com/Websoft9/DocsPicture/zh/azure/azure-vm-websoft9.png)
-2. 进入虚拟机管理项，点击“添加”，即开始创建一个新的虚拟机
-   ![image.png](https://libs.websoft9.com/Websoft9/DocsPicture/zh/azure/azure-addvm-websoft9.png)
+1. 登录到AWS管理控制台，点击“EC2”，
+   ![进入ec2控制台](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-ec2-websoft9.png)
+2. 进入EC2控制面板，点击“启动实例”，即开始创建一个新的实例
+   ![启动实例](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-addec2-websoft9.png)
 3. 在映像一栏，点击“浏览所有公用和专用映像”，然后搜索关键件词“websoft9”，列出相关镜像
-   ![选择Websoft9镜像](https://libs.websoft9.com/Websoft9/DocsPicture/zh/azure/azure-vmimage-websoft9.png)
+   ![选择Websoft9镜像](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-ec2image-websoft9.png)
 
-4. 选择一个你所需的镜像，开始部署
+4. 选择一个你所需的镜像，开始创建EC2实例
+5. 后续动作基本都会要求用户完成：选择实例类型、VPC、Key Pair等设置
+6. 等待几分钟，EC2创建完成后，镜像会作为EC2实例的系统盘启动，即镜像自动部署到实例中
 
 
 
-除了镜像订阅部署之外，你还可以通过我们发布到 [Github 上 Ansible 脚本](https://github.com/websoft9)，来实现自动部署。
+除了镜像订阅部署之外，你还可以通过我们发布到 [Github](https://github.com/websoft9)上的 Ansible 脚本，来实现自动部署。

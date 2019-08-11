@@ -1,47 +1,39 @@
-# 磁盘
+# 卷（磁盘）
 
-对于Azure平台来说，磁盘可以是单独的一种计算资源（单独创建、单独计费、单独管理等），同时也可以被集成到虚拟机，作为其中的一个组件。
+对于AWS平台来说，卷（磁盘）可以是单独的一种计算资源（单独创建、单独计费、单独管理等），同时也可以被集成到服务器实例，作为其中的一个组件。
 
-Azure的磁盘管理中有几个特殊的概念，下面提前解释：
+## 增加卷
 
-* 托管磁盘：托管由Azure公共存储来管理
-* 非托管磁盘：指磁盘只能由账号下的存储账号来管理，不作为一个独立资源对外
-* 存储账号：Azure的后台中提供了存储账号功能，所谓存储账号，即一个可以管理磁盘的入口。
+1. 登录AWS云控制台，打开EC2 Dashboard
+2. 点开ELASTIC BLOCK STORE下的“卷”操作，点击“创建卷”
+   ![创建卷](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-createvolume-websoft9.png)
+3. 设置卷类型，大小等，确认无误后开始创建
+   ![设置卷规格](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-createvolume2-websoft9.png)
+4. 将创建好的卷，挂载到EC2实例
+   ![挂载卷](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-volumeaddec2-websoft9.png)
+5. 登录到EC2实例，完成初始化磁盘操作，使卷可用：
+    - Windows, 请参考AWS官方文档 [使 Amazon EBS 卷可在 Windows 上使用](https://docs.aws.amazon.com/zh_cn/AWSEC2/latest/WindowsGuide/ebs-using-volumes.html)
+    - Linux，请参考请参考文档 [使 Amazon EBS 卷可在 Linux 上使用](https://docs.aws.amazon.com/zh_cn/AWSEC2/latest/UserGuide/ebs-using-volumes.html) 
+5. 完成所有设置后方可使用磁盘
 
-## 数据盘
+## 分离卷
 
-我们知道数据盘是区别于系统盘的一种磁盘，主要用于存放数据。
+将卷从EC2中解除绑定关系，操作如下
 
-### 增加数据盘
+1. 登录AWS云控制台，打开EC2 Dashboard
+2. 在左侧菜单中，选择“实例” ，选择具有要分离的数据磁盘的实例，并单击“停止” 
+3. 点开ELASTIC BLOCK STORE下的“卷”操作，对所要解绑的卷进行“Detach Volume”操作
+   ![创建卷](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-detachvolume-websoft9.png)
 
-1. 登录Azure云控制台，找到所需操作的虚拟机
-2. 打开设置->磁盘，点击“添加数据磁盘”
-   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/zh/azure/azure-addddisk-websoft9.png)
-3. 设置数据磁盘规格
-   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/zh/azure/azure-addddisk2-websoft9.png)
-4. 登录到虚拟机，完成初始化磁盘操作
-    - Windows, 需要进入磁盘管理，请参考Azure官方文档 [初始化Windows磁盘](https://docs.microsoft.com/zh-cn/azure/virtual-machines/windows/attach-managed-disk-portal#initialize-a-new-data-disk)
-    - Linux，需要新磁盘进行分区、格式化和装载等操作，请参考请参考文档 [初始化Linux磁盘](https://docs.microsoft.com/zh-cn/azure/virtual-machines/linux/attach-disk-portal#connect-to-the-linux-vm-to-mount-the-new-disk) 
-5. Complete the above configuration to use the disk
+> 磁盘分离后，会保留在存储中，不会被删除
 
-### 分离数据盘
+## 容量修改
 
-1. 在左侧菜单中，选择“虚拟机” 。
-2. 选择具有要分离的数据磁盘的虚拟机，并单击“停止” 以解除分配 VM。
-3. 在虚拟机窗格中，选择“磁盘” 。
-4. 在“磁盘” 窗格的顶部，选择“编辑” 。
-   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/zh/azure/azure-ddiskds-websoft9.png)
-5. 在“磁盘” 窗格中，转到要分离的数据磁盘最右侧，并单击分离按钮。
-   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/zh/azure/azure-ddiskds2-websoft9.png)
-6. 删除磁盘后，单击窗格顶部的“保存”。
-7. 在虚拟机窗格中，单击“概述” ，并单击窗格顶部的“开始” 按钮重启 VM。
+当卷没有附加到EC2时，可以调整卷的容量
 
-> 磁盘分离后，会保留在存储中，不会删除
+1. 登录AWS控制台，依次打开：EC2->ELASTIC BLOCK STORE->卷
+2. 选择所需修改的卷，依次打开：操作->修改
+   ![修改卷](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-ddiskin-websoft9.png)
+3. 设置新的大小
 
-## 容量增加
-
-仅当未附加磁盘或取消分配所有者 VM 时，才可调整磁盘大小或更改帐户类型。
-
-![img](https://libs.websoft9.com/Websoft9/DocsPicture/zh/azure/azure-ddiskin-websoft9.png)
-
-> 大多数情况下，磁盘只能增加大小，而不能降低大小
+> 大多数情况下，卷只能增加大小，而不能降低大小

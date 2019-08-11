@@ -1,19 +1,19 @@
 # Upgrade
 
-There are two options for updating the OS. One is an update management solution that launches the Azure Portal, and the other is using the OS's upgrade solution.
+There are two options for updating the OS. One is an update management solution that launches the AWS Portal, and the other is using the OS's upgrade solution.
 
-## Upgrade by Azure Portal
+## Upgrade by AWS Portal
 
-Azure have provided a complete [Automatic upgrade solution](https://aka.ms/updatemanagement)
+AWS have provided a complete [Automatic upgrade solution](https://aka.ms/updatemanagement)
 
-1. Login Azure Portal, Click the "Update management" on Operation section, then "Enable" it
-  ![Enable update management](https://libs.websoft9.com/Websoft9/DocsPicture/en/azure/azure-enableupdate-websoft9.png)
-2. Wait for minutes and the Azure will create an update solution. Click "Schedule update deployment" to start set update policy
-   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/azure/azure-updateset-websoft9.png)
+1. Login AWS Portal, Click the "Update management" on Operation section, then "Enable" it
+  ![Enable update management](https://libs.websoft9.com/Websoft9/DocsPicture/en/AWS/AWS-enableupdate-websoft9.png)
+2. Wait for minutes and the AWS will create an update solution. Click "Schedule update deployment" to start set update policy
+   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/AWS/AWS-updateset-websoft9.png)
 
 ## Upgrade by OS
 
-Upgrade by OS is implemented by logging in to the VM and inputting an update command or an operation update function, which is different from the update management function of the Azure portal.
+Upgrade by OS is implemented by logging in to the VM and inputting an update command or an operation update function, which is different from the update management function of the AWS portal.
 
 ### Linux Upgrade
 

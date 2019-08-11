@@ -1,44 +1,44 @@
 # Glossary
 
-#### Azure Portal
+#### AWS Portal
 
-Azure Portal is the web GUI that build, manage, and monitor everything from simple web apps to complex cloud applications in a single, unified console.
+AWS Portal is the web GUI that build, manage, and monitor everything from simple web apps to complex cloud applications in a single, unified console.
 
-![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/azure/azure-portal-websoft9.png)
+![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/AWS/AWS-portal-websoft9.png)
 
 
 
-#### Azure PowerShell
+#### AWS PowerShell
 
-Azure PowerShell provides a set of cmdlets that use the Azure Resource Manager model for managing your Azure resources. You can use it in your browser with Azure Cloud Shell, or you can install it on your local machine and use it in any PowerShell session.
+AWS PowerShell provides a set of cmdlets that use the AWS Resource Manager model for managing your AWS resources. You can use it in your browser with AWS Cloud Shell, or you can install it on your local machine and use it in any PowerShell session.
 
-#### Azure CLI
+#### AWS CLI
 
-The Azure command-line interface (CLI) is Microsoft's cross-platform command-line experience for managing Azure resources. The Azure CLI is easy to learn and the perfect tool for building custom automation that works with Azure resources.
+The AWS command-line interface (CLI) is Microsoft's cross-platform command-line experience for managing AWS resources. The AWS CLI is easy to learn and the perfect tool for building custom automation that works with AWS resources.
 
-#### Azure Virtual Machines (VM)
+#### AWS Virtual Machines (VM)
 
-Azure Virtual Machines provides on-demand, high-scale, secure, virtualized infrastructure using Windows or Linux Server.
+AWS Virtual Machines provides on-demand, high-scale, secure, virtualized infrastructure using Windows or Linux Server.
 
 #### Domain Name
 
 A domain name is a server or network system name that identifies IP resources connected to the Internet. All domain names are unique worldwide.
 
-#### Azure Marketplace
+#### AWS Marketplace
 
-Azure Marketplace provides access and information on solutions and services available from Microsoft and our partners. Customers (IT pros and developers) can discover, try to buy cloud software solutions built on or built for Azure. Our catalog of 8,000+ listings provides Azure building blocks, such as Virtual Machines (VMs), APIs, Azure apps, Solution Templates and managed applications, SaaS apps, containers, and consulting services.
+AWS Marketplace provides access and information on solutions and services available from Microsoft and our partners. Customers (IT pros and developers) can discover, try to buy cloud software solutions built on or built for AWS. Our catalog of 8,000+ listings provides AWS building blocks, such as Virtual Machines (VMs), APIs, AWS apps, Solution Templates and managed applications, SaaS apps, containers, and consulting services.
 
 #### VM Image
 
-A VM Image containing a single VHD with a generalized operating system is essentially the OS image you are familiar with today. Over time, you will notice that VM Images will become the main image construct for Microsoft Azure Virtual Machines. There are two types of VM Images – generalized and specialized – each serving their own purpose.
+A VM Image containing a single VHD with a generalized operating system is essentially the OS image you are familiar with today. Over time, you will notice that VM Images will become the main image construct for Microsoft AWS Virtual Machines. There are two types of VM Images – generalized and specialized – each serving their own purpose.
 
 #### Marketplace Image
 
-Marketplace Image are the images provided by Publisher on Azure Marketplace
+Marketplace Image are the images provided by Publisher on AWS Marketplace
 
 #### Custom Image
 
-Custom images are like marketplace images, but you create them yourself. Custom images can be used to bootstrap configurations such as preloading applications, application configurations, and other OS configurations. In this tutorial, you create your own custom image of an Azure virtual machine
+Custom images are like marketplace images, but you create them yourself. Custom images can be used to bootstrap configurations such as preloading applications, application configurations, and other OS configurations. In this tutorial, you create your own custom image of an AWS virtual machine
 
 #### Port
 
@@ -68,7 +68,7 @@ A security group implements access controls for VM, specifying the communication
 
 #### VHD
 
-An Azure managed disk is a virtual hard disk (VHD). You can think of it like a physical disk in an on-premises server but, virtualized. Azure managed disks are stored as page blobs, which are a random IO storage object in Azure. We call a managed disk ‘managed’ because it is an abstraction over page blobs, blob containers, and Azure storage accounts. With managed disks, all you have to do is provision the disk, and Azure takes care of the rest.
+An AWS managed disk is a virtual hard disk (VHD). You can think of it like a physical disk in an on-premises server but, virtualized. AWS managed disks are stored as page blobs, which are a random IO storage object in AWS. We call a managed disk ‘managed’ because it is an abstraction over page blobs, blob containers, and AWS storage accounts. With managed disks, all you have to do is provision the disk, and AWS takes care of the rest.
 
 #### Data disk
 

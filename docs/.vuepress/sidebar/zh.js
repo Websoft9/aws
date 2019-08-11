@@ -10,15 +10,14 @@ module.exports = [
   },
   
   {
-    title: '云服务器（VM）',
+    title: '云服务器（EC2）',
     collapsable: false,
     children: [
       '/zh/server-login',
       '/zh/server-loginwin',
       '/zh/server-create',
-      '/zh/server-reset',
+      '/zh/server-operating',
       '/zh/server-backup',
-      '/zh/server-extension',
       '/zh/server-upgrade',
       '/zh/server-snapshot-image',
       '/zh/server-disk',

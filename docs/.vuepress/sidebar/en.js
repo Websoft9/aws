@@ -10,15 +10,14 @@ module.exports = [
   },
   
   {
-    title: 'Visual Machine',
+    title: 'EC2-Cloud Server',
     collapsable: false,
     children: [
       '/server-login',
       '/server-loginwin',
       '/server-create',
-      '/server-reset',
+      '/server-operating',
       '/server-backup',
-      '/server-extension',
       '/server-upgrade',
       '/server-snapshot-image',
       '/server-disk',

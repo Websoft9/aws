@@ -1,36 +1,26 @@
 # 词汇表
 
-#### Azure Portal
+#### AWS 控制台
 
-Azure Portal（Azure门户） 就是云控制台，用户创建、管理云资源，查看成本费用的后台门户。
+AWS控制台，就是用户创建、管理云资源，查看成本费用的后台门户。
 
-![img](https://libs.websoft9.com/Websoft9/DocsPicture/zh/azure/azure-portal-websoft9.png)
+#### AWS CLI
 
+官方解释：AWS Command Line Interface (AWS CLI) 是一种开源工具，让您能够在命令行 Shell 中使用命令与 AWS 服务进行交互。仅需最少的配置，您就可以从常用终端程序中的命令提示符开始使用基于浏览器的 AWS 管理控制台提供的相同功能
 
+通俗解释：AWS CLI是一套客户端命令程序，支持在Windows,Linux,macOS,AWS Cloud Shell上安装，安装完成之后可以使用统一的命令语法操作AWS的云资源，这就是所谓的跨平台。
 
-#### Azure PowerShell
+#### EC2
 
-官方解释：Azure PowerShell 提供一组可以使用 [Azure 资源管理器](https://docs.microsoft.com/zh-cn/azure/azure-resource-manager/resource-group-overview)模型管理 Azure 资源的 cmdlet。 Azure PowerShell 使用了 .NET Standard，这使得它可用于 Windows、macOS 和 Linux。 还可以在 Azure Cloud Shell 中使用 Azure PowerShell。
-
-通俗解释：Azure PowerShell 就是Powershell+Azure模块（Az），就是安装了PowerShell的Windows本地电脑上再安装一个Az模块即可运行Azure PowerShell
-
-#### Azure CLI
-
-官方解释：Azure 命令行接口 (CLI) 是用于管理 Azure 资源的 Microsoft 跨平台命令行体验。 Azure CLI 易于学习，是构建适用于 Azure 资源的自定义自动化功能的完美工具。
-
-通俗解释：Azure CLI是一套客户端命令程序，支持在Windows,Linux,macOS,Azure Cloud Shell上安装，安装完成之后可以使用统一的命令语法操作Azure的云资源，这就是所谓的跨平台。
-
-#### Virtual Machines (VM)
-
-VM=云服务器=实例
+EC2=云服务器=实例
 
 #### DNS
 
 DNS (domain name server)，简单的说就是将域名解析成IP地址的服务
 
-#### Azure Marketplace
+#### AWS Marketplace
 
-Azure Marketplace（Azure云市场） 是Azure构建的销售第三方伙伴提供的软件和解决方案的市场平台
+AWS Marketplace（AWS云市场） 是AWS构建的销售第三方伙伴提供的软件和解决方案的市场平台
 
 #### Port
 
@@ -42,7 +32,7 @@ SSH是一种加密网络协议，用于在基于应用层和传输层的不安�
 
 #### Secure Shell key pair (SSH key pair)
 
-SSH key pair（秘钥对）可用于远程登录VM实例的身份验证方法。 SSH密钥对是通过加密算法生成的一对密钥：一个密钥是公共可用的（公钥），另一个密钥是保密的（私钥）。
+SSH key pair（秘钥对）可用于远程登EC2实例的身份验证方法。 SSH密钥对是通过加密算法生成的一对密钥：一个密钥是公共可用的（公钥），另一个密钥是保密的（私钥）。
 
 如果已将公钥放在Linux实例中，则可以使用私钥通过本地计算机或其他没有密码的实例使用SSH命令或相关工具登录实例。
 
@@ -58,14 +48,35 @@ SFTP（SSH文件传输协议）是一种安全的文件传输协议。 它运行
 
 Security Gourp (安全组) 是用于管理网络端口访问的一序列协议在组合。
 
-#### VHD
+#### Amazon EBS
 
-VHD（Azure托管磁盘是虚拟硬盘）。 您可以将其视为本地服务器中的物理磁盘。 Azure托管磁盘存储为页面blob，它是Azure中的随机IO存储对象。 我们称托管磁盘为“托管”，因为它是对页面blob，blob容器和Azure存储帐户的抽象。 使用托管磁盘，您所要做的就是配置磁盘，Azure负责其余部分。
+Amazon EBS 提供块级别的持久存储卷，您可将这些卷附加到正在运行的实例。可以使用 Amazon EBS 作为主要存储设备，以获取需要频繁更新和精细更新的数据。例如，如果在实例上运行数据库，则建议选用 Amazon EBS 作为存储设备。
 
-#### Data disk
+通俗解释：EBS就是持久性虚拟硬盘
 
-Data disk（数据盘）区别于系统盘，故名思议是用于存放数据的硬盘
+#### Amazon EC2 实例存储
 
-#### OS disk
+实例存储 为您的实例提供临时性块级存储。此存储位于已物理附加到主机的磁盘上。实例存储是一种理想的临时存储解决方案，非常适合存储需要经常更新的信息，如缓存、缓冲、临时数据和其他临时内容，或者存储从一组实例上复制的数据，如 Web 服务器的负载均衡池。
 
-OS Disk（系统盘）故名思议是用于启动操作系统的磁盘，同时只要容量足够，系统盘也可以存放数据
+通俗解释：实例存储就是临时性虚拟硬盘
+
+#### Amazon S3
+Amazon S3 是 Internet 数据的存储库。Amazon S3 提供了可靠、快速和廉价的数据存储基础设施。它的设计理念是通过支持您随时从 Amazon EC2 内部或从网络上的任何地方存储和检索任何数量的数据，从而简化整个网络计算。Amazon S3 以冗余方式跨多个设施在多个设备上存储数据元，允许多个不同的客户端或应用程序线程同时对这些数据元进行读或写操作。您可以使用存储在 Amazon S3 中的冗余数据快速、可靠地恢复实例或应用程序故障。
+
+通俗解释：S3就是对象存储服务
+
+#### 数据盘
+
+数据盘区别于系统盘，故名思议是用于存放数据的硬盘
+
+#### 系统盘
+
+系统盘故名思议是用于启动操作系统的磁盘，同时只要容量足够，系统盘也可以存放数据
+
+#### Route 53
+
+即AWS的域名注册与管理服务
+
+#### 卷
+
+即磁盘

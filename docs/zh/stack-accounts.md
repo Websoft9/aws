@@ -37,8 +37,26 @@
 
 ## 操作系统
 
-Azure平台中，操作系统的账号和密码是创建虚拟机的时候自行设置的，如果你创建过虚拟机，一定熟悉这个界面：
+AWS在创建EC2的时候，只能选择采用秘钥对作为验证方式
 
-![img](https://libs.websoft9.com/Websoft9/DocsPicture/zh/azure/azure-vmsetpw-websoft9.png)
+![秘钥对设置](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-ec2createpw-websoft9.png)
 
-其中，身份验证类型包括：密码和SSH公钥（秘钥对）两种方式。
+另外，针对于不同的操作系统（甚至发行版）其用户名是不一样的：
+
+### Linux
+
+- 对于 Amazon Linux 2 或 Amazon Linux AMI，用户名称是 ec2-user。
+- 对于 CentOS AMI，用户名称是 centos。
+- 对于 Debian AMI，用户名称是 admin 或 root。
+- 对于 Fedora AMI，用户名为 ec2-user 或 fedora。
+- 对于 RHEL AMI，用户名称是 ec2-user 或 root。
+- 对于 SUSE AMI，用户名称是 ec2-user 或 root。
+- 对于 Ubuntu AMI，用户名称是 ubuntu。
+
+如果 ec2-user 和 root 无法使用，请与 AMI 供应商核实。
+
+以上信息来源于 AWS官方说明，了解[详情](https://docs.aws.amazon.com/zh_cn/AWSEC2/latest/UserGuide/connection-prereqs.html)。
+
+### Windows
+
+用户名是 `Administrator`

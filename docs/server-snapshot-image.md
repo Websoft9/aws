@@ -16,11 +16,11 @@ Following key information points are listed:
 
 ## Create Snapshot
 
-1. Login to [Azure Portal](https://portal.azure.com/)
+1. Login to [AWS Portal](https://portal.AWS.com/)
 2. Open the All Services->Compute->Snapshots
-   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/azure/azure-snapshot-websoft9.png)
+   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/AWS/AWS-snapshot-websoft9.png)
 3. Then, Click the "+Add" or "Create snapshot" in the Snapshots page
-   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/azure/azure-createsnapshot-websoft9.png)
+   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/AWS/AWS-createsnapshot-websoft9.png)
 4. Follow the prompts to complete the creation from **source disk** to snapshot
 
 ## Create Image
@@ -29,16 +29,16 @@ As mentioned earlier, image can be created based on snapshots, and image can be 
 
 ### VM to Image
 
-1. Login to [Azure Portal](https://portal.azure.com/)
+1. Login to [AWS Portal](https://portal.AWS.com/)
 2. Open the VM, and click the "**Capture**" 
-   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/azure/azure-vmtoimage-websoft9.png)
+   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/AWS/AWS-vmtoimage-websoft9.png)
 3. Follow the prompts to complete the next steps
 4. It's worth noting that the Capture operation also deletes the VM while creating the image.
 
 ### Snapshot to Image
 
-1. Login to [Azure Portal](https://portal.azure.com/)
+1. Login to [AWS Portal](https://portal.AWS.com/)
 2. Open the All Services->Compute->Snapshots
-   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/azure/azure-snapshot-websoft9.png)
+   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/AWS/AWS-snapshot-websoft9.png)
 3. You can see all image listed
 4. Select the snapshot and create image for it

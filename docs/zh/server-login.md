@@ -4,17 +4,21 @@
 
 ## 命令行连接
 
-命令行（Command）是Linux系统基本的操作，Azure提供了两种网页版SSH工具，无需账号即可登录。
+命令行（Command）是Linux系统基本的操作，AWS支持三种命令行连接方式：
 
-> 如果您不习惯使用云平台的提供的在线SSH命令行工具，下载SSH客户端工具（例如：[putty](https://putty.org/)），配置登录信息之后便可以连接Linux。
+| 方式                                                   | 操作说明                                                     |
+| ------------------------------------------------------ | ------------------------------------------------------------ |
+| 一个独立的SSH客户端                                    | 需要下载 [putty](https://putty.org/) 等客户端到本地电脑来连接服务器 |
+| 托管SSH客户端直接来自我的浏览器（Alpha）               | 从AWS控制台网页直接连接服务器，前置条件是服务器需要安装[EC2 Instance Connect](https://docs.aws.amazon.com/zh_cn/AWSEC2/latest/UserGuide/ec2-instance-connect-set-up.html) |
+| 直接从我的浏览器连接的 Java SSH 客户端（需要安装Java） | 从AWS控制台网页直接连接服务器，前置条件是浏览器需要**安装Java插件** |
 
-* 方法一：登录云控制台，打开虚拟机->操作，点击“运行命令”
 
-![运行命令](https://libs.websoft9.com/Websoft9/DocsPicture/zh/azure/azure-runcmd-websoft9.png)
+我们以 “**托管SSH客户端直接来自我们的浏览器**” 为例描述如何连接Linux
 
-* 方法二：登录云控制台，打开虚拟机->支持与疑难解答，点击“串行控制台“
-
-![运行命令](https://libs.websoft9.com/Websoft9/DocsPicture/zh/azure/azure-runcmd2-websoft9.png)
+1. 参考[此处文档](https://docs.aws.amazon.com/zh_cn/AWSEC2/latest/UserGuide/ec2-instance-connect-set-up.html)，安装EC2 Instance Connect组件（Websoft9镜像默认已安装，忽略此步骤）
+2. 登录AWS云控制台，打开：实例->连接，选择第二种连接方式后，点击“Connect”按钮
+   ![命令行连接](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-connectmethods-websoft9.png)
+3. 将打开一个窗口，并且您连接到实例。
 
 通过命令行连接服务器之后，如下两个最常用的操作示例是需要掌握的：
 
@@ -32,7 +36,7 @@ MySQL Password:@qDg1Vq1!V
 
 ### 示例2：启用系统root账号
 
-Azure出于安全和法规要求，默认情况下没有开放Linux的root账号，只给用户提供了普通账号。如果您希望使用root账号，通过下面的步骤启用之：
+AWS出于安全和法规要求，默认情况下没有开放Linux的root账号，只给用户提供了普通账号。如果您希望使用root账号，通过下面的步骤启用之：
 
 ```shell
 sudo su

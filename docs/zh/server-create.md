@@ -1,47 +1,30 @@
 # 创建
 
-下面介绍Azure上虚拟机的创建方式。
+下面介绍AWS上服务器实例的创建方式。
 
-创建虚拟机最基本的条件是需要给虚拟机准备一个系统盘的启动模板文件。这个模板文件有两种：一个是我们非常熟悉的镜像，另外一个是VHD（虚拟磁盘）文件。
+创建实例最基本的条件是需要给服务器准备一个系统盘的启动模板文件，这个模板最常见的表现形式就是镜像文件
 
-因此，创建VM也有两种方式：基于镜像创建和基于系统盘创建
+下面介绍基于镜像创建云服务器的操作步骤：
 
-## 镜像创建
+## 创建EC2
 
-1. 登录Azure控制台，打开：虚拟机->添加，开始创建虚拟机
-
-2. 创建虚拟机的时候选择合适的镜像（这是最重要的步骤）
-   ![image.png](http://libs.websoft9.com/Websoft9/DocsPicture/zh/azure/azure-createvmbyimage-websoft9.png)
-
-   > 镜像来源有：官方镜像、云市场镜像和自定义镜像三种镜像来源。如果自定义镜像来源，磁盘就只能选择托管模式
-
-3. 依次设置账号密码、网络、安全组等配置
-
-4. 查看 + 创建 通过之后，点击“创建”即可
-
-## 系统盘创建
-
-1. 登录Azure控制台，打开“所有资源”，找到一个已经被解除绑定的磁盘
-   ![image.png](http://libs.websoft9.com/Websoft9/DocsPicture/zh/azure/azure-createvmbydisk-websoft9.png)
-2. 点击这个磁盘，对这个磁盘进行“创建VM”操作
-3. 依次设置账号密码、网络、安全组等配置
-4. 查看 + 创建 通过之后，点击“创建”即可
+1. 登录到AWS管理控制台，点击“EC2”，
+   ![进入ec2控制台](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-ec2-websoft9.png)
+2. 进入EC2控制面板，点击“启动实例”，即开始创建一个新的实例
+   ![启动实例](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-addec2-websoft9.png)
+3. 在映像一栏，点击“浏览所有公用和专用映像”，然后搜索关键件词“websoft9”，列出相关镜像
+   ![选择Websoft9镜像](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-ec2image-websoft9.png)
+4. 选择一个你所需的镜像，开始创建EC2实例 
+5. 后续动作基本都会要求用户完成：选择实例类型、VPC、Key Pair等设置
+   ![选择Websoft9镜像](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-ec2createpw-websoft9.png)
+6. 等待几分钟，EC2创建完成后，镜像会作为EC2实例的系统盘启动，即镜像自动部署到实例中
 
 ## 秘钥对
-在创建VM的时候，有些用户喜欢采用秘钥对方式作为登录凭证
 
-![image.png](http://libs.websoft9.com/Websoft9/DocsPicture/en/azure/azure-createvmsshkey-websoft9.png)
+在创建EC2时，AWS要求使用秘钥对登录，下面是创建秘钥对步骤
 
-由于Azure需要自行提供SSH public key, 因此需要用户提前准备。
-
-下面以PUTTYGEN(KEY GENERATOR FOR PUTTY ON WINDOWS)为例，说明如何创建SSH public key
-
-1. Download and Install [PUTTYGEN](https://www.ssh.com/ssh/putty/windows/puttygen).
-
-2. Click "Generate"  
-![image.png](https://libs.websoft9.com/Websoft9/DocsPicture/en/putty/puttygen-generate-websoft9.png)
-
-3. Public key and Private key is OK, you can copy public to Azure(format starting with "ssh-rsa") ,and Save the public key and private key on your local computer for backups
-   ![image.png](https://libs.websoft9.com/Websoft9/DocsPicture/en/putty/puttygen-generatesave-websoft9.png)
-
-4. When connect Linux on your local computer, you can use private key for authentication 
+1. 登录AWS控制台，打开：EC2 Dashboard->网络与安全->秘钥对，点击“**创建秘钥对**”按钮
+   ![创建秘钥对](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-createkeyps-websoft9.png)
+2. 为秘钥对命名，例如“myKey”
+   ![秘钥对名称](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-keypsname-websoft9.png)
+3. 将秘钥对文件 myKey.pem 保存到本地电脑
