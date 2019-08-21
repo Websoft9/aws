@@ -10,12 +10,12 @@ locales: {
     '/': {
       lang: 'en-US', // 将会被设置为 <html> 的 lang 属性
       title: 'AWS Platform',
-      description: 'You can get the Installation of Image,Administrator,Configuration of the OwnCloud from this documentation.'
+      description: 'You can get the Installation of Image,Administrator,Configuration of the AWS from this documentation.'
     },
     '/zh/': {
       lang: 'zh-CN',
       title: 'AWS云平台指南',
-      description: 'You can get the Installation of Image,Administrator,Configuration of the OwnCloud from this documentation.'
+      description: 'You can get the Installation of Image,Administrator,Configuration of the AWS from this documentation.'
     }
 },
 

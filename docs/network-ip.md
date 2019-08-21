@@ -1,31 +1,21 @@
-# Public IP Address
+# 公网IP地址
 
-## View
+## 查看
 
-1. Login AWS Portal
-2. In the Overview of VM, you can see the Public IP Address directly
-   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/AWS/AWS-publicip-websoft9.png)
-3. If the VM does not have a public IP address entry (or is empty), you need to refer to the next section to mount a public IP address.
+1. 登录AWS控制台
+2. 打开要查看公网IP的实例，我们会看到 **公有IP** 和 **公有DNS**
+   ![查看公网IP](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-getip-websoft9.png)
+3. 如果实例没有公网IP地址项（或为空），就需要参考下一个小节挂载一个公网IP
 
-## Mount
+## 挂载
 
-When the created VM does not have a public IP address, as long as there is a free (or newly purchased) public IP address, the AWS console can mount the public network IP address to the virtual machine. The specific steps are as follows:
+当创建的实例没有公网IP地址，只要有空闲（或新购）的公网IP地址，AWS控制台是可以给实例挂载上公网IP地址的。具体操作步骤如下：
 
-1. Login AWS Portal
-2. Open the VM->Networking, then the Network Interface item
-   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/AWS/AWS-networkinterface-websoft9.png)
+1. 登录到AWS控制台
+2. 打开所需的实例，查看：操作->联网->管理IP地址
+   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-manageip-websoft9.png)
 
-2. On the details of Network Interface, open the "IP configuration" item and click the "ipconfig1"
-   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/AWS/AWS-ipconfig-websoft9.png)
+3. 在管理IP地址操作栏中，点击“分配弹性IP”
+   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-assignip-websoft9.png)
 
-3. Existing public network IP mount operation on ipconfig1
-   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/AWS/AWS-ipconfig1-websoft9.png)
-
-4.If there is no public network IP option, you can create a new one.
-   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/AWS/AWS-createip-websoft9.png)
-
-## Static IP
-
-The default option for creating a VM is to create a dynamic IP. You can also choose to create a static IP.
-
-   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/AWS/AWS-createstaticip-websoft9.png)
+4. 根据提示完成后续操作

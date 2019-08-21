@@ -1,29 +1,29 @@
-# Marketplace
+# 云市场
 
-AWS Marketplace provides access and information on solutions and services available from Microsoft and our partners. Customers (IT professionals and developers) can discover, try to buy cloud software solutions built on or built for AWS. Our catalog of 8,000+ listings provides AWS building blocks, such as Virtual Machines (VMs), APIs, AWS apps, Solution Templates and managed applications, SaaS apps, containers, and consulting services.
+AWS Marketplace（云市场）是由AWS的合作伙伴提供的软件产品和解决方案库，主要为商业IT软件和服务感兴趣的IT专业人员和云开发人员而设计。
 
-Websoft9 is Parnter of AWS Marketplace, we have pulished hundred of images on AWS for user to deploy opensource software simply. 
+Websoft9是AWS云市场的重要合作伙伴，我们在AWS上发布了数百款镜像产品，供用户在实例上一键部署。
 
-AWS Marketplace have two version:
+AWS云市场有两个版本：
 
-- [Global Marketplace](https://AWSmarketplace.microsoft.com/en-us/marketplace/apps)
-- [Chinese Marketplace](https://market.AWS.cn/zh-cn)
+* [AWS Marketplace](https://aws.amazon.com/marketplace)
+* [AWS Marketplace China](https://www.amazonaws.cn/marketplace/help/?nc2=h_l1)
 
-The Chinese version is a special version, a cloud computing platform that complies with Chinese laws and regulations by AWS and Century.
+AWS Marketplace China 是一个独立的在线商店，由宁夏西云数据科技有限公司 (NWCD) 运营。其产品目录中的内容面向 AWS 中国（北京）区域和 AWS 中国（宁夏）区域的客户。请查看AWS在中国的服务，了解其对AWS Marketplace China 的产品的影响。
 
-Websoft9's image is currently only available in the AWS global version of the cloud market.
+Websoft9的镜像目前只发布在 AWS Marketplace 中。
 
-More question about AWS Marketplace ,refer to [AWS Marketplace FAQ](https://docs.microsoft.com/en-us/AWS/marketplace/marketplace-faq-publisher-guide)
+更多AWS云市场问题，请参考[AWS Marketplace FAQ](https://aws.amazon.com/marketplace/help?ref_=footer_nav_help)
 
-## Regional restrictions
+## 地区限制
 
-If you country is not available for AWS, you can also use the apps on AWS Marketplace
+AWS全球云市场不向注册账号为中国地区的用户销售，但通过下面的步骤，中国用户也可使用：
 
-1. In the process of registering an account, there is an increase in the payment account, be sure to select the **USA region**.
-2. Then bind the credit card (you can use a credit card of your country)
+1. 注册账号流程中，有一个增加付款账号，建议选择美国地区
+2. 然后绑定信用卡（可以使用中国发行的信用卡）
 
-## Support
+## 技术支持
 
-We provide standard technical support for user on AWS Marketplace: help@websoft9.com
+通过云市场使用我们的镜像产品，我们会提供标准的技术支持：help@websoft9.com
 
-More support: https://support.websoft9.com
+更多支持请访问：https://support.websoft9.com

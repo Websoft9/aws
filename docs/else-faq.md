@@ -1,54 +1,57 @@
 # FAQ
 
-#### What Is the Username of VM?
+#### 实例的登录账号是什么？
 
-What Is the Username to Log In to an VM, refer to [Linux Connect](/server-login.md) and [Windows Connect](/server-loginwin.md)
+密码是用户在创建实例的时候，AWS只支持秘钥对方式。Windows实例的账号名称是`Administrator`，Linux实例的账号名称参考本文档的 [账号密码-操作系统](/zh/stack-accounts.md) 相关章节
 
-#### What is the database username and password?
+#### 数据库账号密码是什么？
 
-The username and password information is storaged on your VM, refer to [Username and Password](/stack-accounts.md) chapter     of this documentation.
+数据库账号密码默认存放在服务器中，参考本文档的[账号密码-数据库](/zh/stack-accounts.md)章节
 
-#### How to enable the root user of Linux?
+#### 如何启用Linux系统的root账号？
 
-By default, the root account is not enabled on AWS, in fact we can find a way to enable it.
+AWS 默认情况下，root 账号是没有启用的，实际上我们可以想办法启用它。
 
-Refer to: [Linux Connect](/server-login.md) chapter of this documentation.
+参考：[连接Linux-示例2 启用root账号](/zh/server-login.md)
 
-#### How to upload Files to VM?
+#### 如何上传文件到服务器？
 
-For Windows Server, you can Copy local files and Paste them to Server, it's very simple
-For Linux Server, you can use SFTP tools to login Server, and upload files
+对于Windows来说，**远程桌面**登录到服务器后，通过复制/粘贴就可以上传文件
 
-#### Can the image be refunded?
+对于Linux来说，通过 **SFTP** 连接服务器即可管理文件
 
-Image is billed hourly, half an hour is paid in half an hour, and an hour is paid in one hour...
+#### 镜像可以退款吗？
 
-Therefore, no refund is allowed. If you do not use mirroring, please delete the image or stop the VM.
+对于Hourly计费镜像：用半小时就付费半小时费用，用一个小时就付费一个小时... 因此不可以退款，如果不使用镜像，请删除镜像或停止服务器
 
-#### What should I do if the VM's IP address changes after it restarts?
+对于包年镜像：当您由Websoft9的A镜像更换到B镜像的时候，可以退换A镜像剩余时间的款项
 
-It is recommended to change to a static IP or set up a DNS provided by AWS for the server.
+#### 服务器的IP地址重启后发生变化怎么办？
 
-#### Does Websoft9 have a free image?
+建议更改为静态IP或为服务器设置一个由AWS提供的DNS
 
-We do not offer free images on AWS. If you want to use our deployment package freely, please download our automation script via [Github] (https://github.com/websoft9) and deploy it via Ansible
+#### Websoft9有免费镜像吗？
 
-#### Is there a difference between the Github script deployment and the AWS cloud market image deployment for Websoft9?
+我们在AWS的云市场上不提供免费镜像。如果您想免费使用我们的部署包，请通过 [Github](https://github.com/websoft9) 下载我们的自动化脚本，通过Ansible部署。
 
-The deployment results are the same, but the deployment is different.
+#### 对于Websoft9的部署包来说，通过Github脚本部署与AWS云市场的镜像部署有区别吗？
 
-#### How to list all products of Websoft9 on AWS Marketplace
+部署结果是一样的，只是部署方式不同
 
-Visit this link  [Websoft9 Prodcuts](https://AWSmarketplace.microsoft.com/en-us/marketplace/apps?page=1&search=websoft9)  or search the keyword "websoft9" on AWS Marketplace
+#### 如何列出Websoft9在AWS云市场上的所有产品？
 
-#### Can the image on the VM be replaced?
+通过 [Websoft9镜像库](https://aws.amazon.com/marketplace/seller-profile?id=c639a579-182c-4d30-8578-4d4d89fba658) 查看我们在AWS上的所有镜像，也可以通过搜索关键字“websoft9”列出
 
-No
+#### 实例上的镜像是否可以更换？
 
-#### Can I use a temporary disk (/dev/sdb1) to store data?
+不可以
 
-Do not use a temporary disk (/dev/sdb1) to store data. It is only used for temporary storage. There is a risk of losing data that cannot be recovered.
+#### 实例存储与EBS存储有什么区别？
 
-#### What are the format requirements for the username and password when creating VM?
+实例存储是一种理想的临时存储解决方案，非常适合存储需要经常更新的信息，如缓存、缓冲、临时数据和其他临时内容，或者存储从一组实例上复制的数据，如 Web 服务器的负载均衡池。
 
-AWS has a clearer requirement for this, refer to:[AWS username and password requirements](https://docs.microsoft.com/en-us/AWS/virtual-machines/linux/faq#what-are-the-username-requirements-when-creating-a-vm)
+EBS存储是固定的块级存储，可以单独创建后绑定到EC2，也可以从EC2解绑而不丢失数据
+
+#### 我能创建EC2的操作系统账号吗？
+
+创建EC2的时候只有默认账号名称，但采用默认账号登录到系统后，可以自行创建更多账号

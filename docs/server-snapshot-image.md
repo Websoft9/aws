@@ -1,44 +1,44 @@
-# Snapshot and Image
+# 快照与镜像
 
-The reason we put snapshots and image together is because there is a certain relationship between the two, and even there is an alternate relationship.
+之所以我们把快照和镜像放在一起描述，是因为这两者有一定的关联，甚至说有互生关系。
 
-## Relationship
+## 关系
 
-A snapshot is a "photographing" of a disk. As the name suggests, it is to back up the data of a disk at a certain point in time. It is a backup method.
+此处不对快照和镜像进行抽象概念描述，只列出如下几个关键信息点：
 
-Following key information points are listed:
+* 基于磁盘可以创建一个快照。
 
-* A snapshot can be created based on the disk.
-* A image can be created based on a snapshot, and the image cannot be directly converted into a snapshot.
-* Based on the image, you can create a VM directly, and you can create a image directly based on the VM.
+  快照是对磁盘进行“拍照”，顾名思义就是备份某个时间点卷（磁盘）的数据，是一种备份手段
 
-> Summary: (disk --> snapshot) --> (image - VM)
+* 基于快照可以创建一个镜像，而镜像无法直接转换成快照。
 
-## Create Snapshot
+* 基于镜像可以直接创建一个实例，基于实例也可以直接创建一个镜像
 
-1. Login to [AWS Portal](https://portal.AWS.com/)
-2. Open the All Services->Compute->Snapshots
-   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/AWS/AWS-snapshot-websoft9.png)
-3. Then, Click the "+Add" or "Create snapshot" in the Snapshots page
-   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/AWS/AWS-createsnapshot-websoft9.png)
-4. Follow the prompts to complete the creation from **source disk** to snapshot
+总结：（卷-->快照） --> （镜像--实例）
 
-## Create Image
+## 创建快照
 
-As mentioned earlier, image can be created based on snapshots, and image can be created based on VM.
+对于AWS来说，基于卷来创建快照
 
-### VM to Image
+1. 登录到AWS控制台，打开EC2 Dashboard
+2. 打开ELASTIC BLOCK STORE下的卷功能，选择一个卷后，实现“创建”快照操作
+   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-createsnapshot-websoft9.png)
+3. 给快照命名后，开始创建
 
-1. Login to [AWS Portal](https://portal.AWS.com/)
-2. Open the VM, and click the "**Capture**" 
-   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/AWS/AWS-vmtoimage-websoft9.png)
-3. Follow the prompts to complete the next steps
-4. It's worth noting that the Capture operation also deletes the VM while creating the image.
+## 创建镜像
 
-### Snapshot to Image
+前面讲过，基于快照可以创建镜像，基于实例也可以创建镜像
 
-1. Login to [AWS Portal](https://portal.AWS.com/)
-2. Open the All Services->Compute->Snapshots
-   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/AWS/AWS-snapshot-websoft9.png)
-3. You can see all image listed
-4. Select the snapshot and create image for it
+### 实例创建镜像
+
+1. 登录到AWS控制台
+2. 打开需要创建镜像的实例，打开：操作->映像->创建镜像
+![img](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-ec2toimage-websoft9.png)
+3. 根据提示完成后续步骤
+
+### 快照创建镜像
+
+1. 登录到AWS控制台，进入EC2 Dashboard
+2. 找到ELASTIC BLOCK STORE下的快照功能，列出所有快照
+3. 选择所需的快照，对它进行创建镜像操作
+   ![打开快照](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-snapshot-websoft9.png)

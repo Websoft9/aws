@@ -1,31 +1,39 @@
-# Backups
+# 备份
 
-We know that no one (organization) can guarantee that the VM will always be up and running. If the VM fails to start or fails to connect, what would happen if there was no backup? Is this less worthwhile to try?
+我们知道任何人（组织）都无法保证EC2永远正常运行状态。假如EC2出现无法启动或无法连接的故障，若没有备份会是什么样的后果？这样的教训是否值得尝试？
 
-If there is a backup, it can be restored to the state at the time of backup, greatly reducing the loss.
+如果有备份，就能够恢复到备份之时的状态，大大降低损失。
 
-AWS Portal-> All service ->Storage, the "Recovery Services vaults" service is for backup of VM:
+AWS中对EC2实现备份的基本原理就是对EC2所属的磁盘做自动快照。
 
-![Recovery Services vault](https://libs.websoft9.com/Websoft9/DocsPicture/en/AWS/AWS-backuprs-websoft9.png)
+AWS控制台提供了两种备份入口：
 
+## 快照备份
 
+### 自动快照
 
-Below we explain how to set up backups for existing VMs and create VMs.
+1. 登录AWS控制台
+2. 打开：EC2->ELASTIC BLOCK STORE->生命周期管理器，创建快照生命周期策略
+    ![创建快照生命周期策略](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-snapshotauto-websoft9.png)
+2. 根据提示完成快照策略设置
 
-## Existing VM settings
+### 手动快照
 
-For the VM that has been created, set the automatic backup strategy, please refer to the following figure.
+如果不算自动备份，而是手动根据需要备份，步骤如下：
 
-![set backcup](https://libs.websoft9.com/Websoft9/DocsPicture/en/AWS/AWS-backupstart-websoft9.png)
+1. 登录到AWS控制台，打开EC2 Dashboard
+2. 打开ELASTIC BLOCK STORE下的卷功能，选择一个卷后，实现“创建”快照操作
+   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-createsnapshot-websoft9.png)
+3. 给快照命名后，开始创建
 
-## Create VM settings
+## AWS Backup
 
-When creating a VM, we can set up automatic backup mode.
+AWS中，AWS Backup 就是用于备份AWS设施的专项服务
 
-1. Create a VM, backup items under the Management tab, Enable backup
-   ![enable backup](https://libs.websoft9.com/Websoft9/DocsPicture/en/AWS/AWS-backupmanage-websoft9.png)
-
-2. Select an already created vault name or create a new vault name and set a backup policy
-   ![backup policy](https://libs.websoft9.com/Websoft9/DocsPicture/en/AWS/AWS-backuppolicy-websoft9.png)
-
-3. Increasing the frequency of backups is a good choice when budget allows.
+1. 登录AWS控制台，打开：服务->存储->AWS Backup，创建一个备份计划 
+   ![AWS Backup服务](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-backupservices-websoft9.png)
+2. 在已有备份计划下，创建按需备份（即选择需要备份的云资源）
+   ![AWS Backup服务](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-backupres-websoft9.png)
+3. 资源类型为：EBS（磁盘），再选择一个列出的卷ID
+   ![AWS Backup服务](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-backupres2-websoft9.png)
+4. 完成其他备份设置
