@@ -22,7 +22,7 @@
 
 1. 登录到AWS控制台，打开EC2 Dashboard
 2. 打开ELASTIC BLOCK STORE下的卷功能，选择一个卷后，实现“创建”快照操作
-   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-createsnapshot-websoft9.png)
+   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-createsnapshot-websoft9.png)
 3. 给快照命名后，开始创建
 
 ## 创建镜像
@@ -33,7 +33,7 @@
 
 1. 登录到AWS控制台
 2. 打开需要创建镜像的实例，打开：操作->映像->创建镜像
-![img](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-ec2toimage-websoft9.png)
+![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-ec2toimage-websoft9.png)
 3. 根据提示完成后续步骤
 
 ### 快照创建镜像
@@ -41,4 +41,4 @@
 1. 登录到AWS控制台，进入EC2 Dashboard
 2. 找到ELASTIC BLOCK STORE下的快照功能，列出所有快照
 3. 选择所需的快照，对它进行创建镜像操作
-   ![打开快照](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-snapshot-websoft9.png)
+   ![打开快照](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-snapshot-websoft9.png)

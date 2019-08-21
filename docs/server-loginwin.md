@@ -19,13 +19,13 @@ AWS上由于只支持[秘钥对](/zh/server-create.md)创建实例，因此在�
    - 通过 **Windows Logo** + **R** 打开系统的命令窗口，输入”mstsc“来启动远程桌面连接工具
 
 2. 打开远程桌面连接，输入公网IP地址
-   ![img](http://libs.websoft9.com/Websoft9/DocsPicture/zh/windows/windows-remote.png)
+   ![img](http://libs.websoft9.com/Websoft9/DocsPicture/en/aws/windows-remote.png)
 
 3. 通过更多选项，设置默认用户名，例如”Administrator“，并勾选”允许我保存凭据“
-   ![img](http://libs.websoft9.com/Websoft9/DocsPicture/zh/windows/windows-remote-login.png)
+   ![img](http://libs.websoft9.com/Websoft9/DocsPicture/en/aws/windows-remote-login.png)
 
 4. 点击连接，成功后会看到Windows界面
-   ![image.png](http://libs.websoft9.com/Websoft9/DocsPicture/en/azure/azure-windows2019desktop-websoft9.png)
+   ![image.png](http://libs.websoft9.com/Websoft9/DocsPicture/en/aws/azure-windows2019desktop-websoft9.png)
 
 5. 远程登录后，就可以直接从本地**拷贝**文件，然后**粘贴**文件到服务器上。
    ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/azure/azure-copyfilewin-websoft9.png)

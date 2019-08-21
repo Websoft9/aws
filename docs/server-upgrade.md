@@ -8,7 +8,7 @@ AWS提供一套完整的[AWS Systems Manager](https://www.amazonaws.cn/systems-m
 
 1. 登录AWS门户
 2. 打开：管理与监管->System Manager，进入如下的相关管理界面
-![启用更新管理](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-sysmupdate-websoft9.png)
+![启用更新管理](http://libs-websoft9-com.oss-cn-qingdao.aliyuncs.com/Websoft9/DocsPicture/en/aws/aws-sysmupdate-websoft9.png)
 3. 补丁管理器就是基本的更新方案
 
 

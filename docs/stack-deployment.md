@@ -33,11 +33,11 @@ Websoft9已经在 AWS Marketplace 上提供了多款镜像（**AWS称镜像为AM
 ## EC2部署
 
 1. 登录到AWS管理控制台，点击“EC2”，
-   ![进入ec2控制台](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-ec2-websoft9.png)
+   ![进入ec2控制台](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-ec2-websoft9.png)
 2. 进入EC2控制面板，点击“启动实例”，即开始创建一个新的实例
-   ![启动实例](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-addec2-websoft9.png)
+   ![启动实例](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-addec2-websoft9.png)
 3. 在映像一栏，点击“浏览所有公用和专用映像”，然后搜索关键件词“websoft9”，列出相关镜像
-   ![选择Websoft9镜像](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-ec2image-websoft9.png)
+   ![选择Websoft9镜像](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-ec2image-websoft9.png)
 
 4. 选择一个你所需的镜像，开始创建EC2实例
 5. 后续动作基本都会要求用户完成：选择实例类型、VPC、Key Pair等设置

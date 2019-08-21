@@ -39,7 +39,7 @@
 
 AWS在创建EC2的时候，只能选择采用秘钥对作为验证方式
 
-![秘钥对设置](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-ec2createpw-websoft9.png)
+![秘钥对设置](http://libs-websoft9-com.oss-cn-qingdao.aliyuncs.com/Websoft9/DocsPicture/en/aws/aws-ec2createpw-2-websoft9.png)
 
 另外，针对于不同的操作系统（甚至发行版）其用户名是不一样的：
 

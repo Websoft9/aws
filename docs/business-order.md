@@ -5,9 +5,9 @@
 ## Marketplace Console
 
 1. 登录AWS控制台门户，打开AWS成本管理下的“AWS Marketplace 订阅”
-   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-mkconsole-websoft9.png)
+   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-mkconsole-websoft9.png)
 2. 找到一个订阅项，点击“管理”按钮，对此订阅进行相关操作
-   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-mkconsolemanage-websoft9.png)
+   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-mkconsolemanage-websoft9.png)
 
 
 ## 评价

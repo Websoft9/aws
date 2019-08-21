@@ -4,9 +4,9 @@
 
 1. 登录AWS控制台，打开EC2->实例
 2. 打开实例下的“描述”标签，然后点击安全组名称
-   ![ec2更改安全组](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-changesg-websoft9.png)
+   ![ec2更改安全组](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-changesg-websoft9.png)
 3. 进入所属安全组的设置后，打开“入站”标签页，点击编辑
-   ![ec2更改安全组入](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-sfin-websoft9.png)
+   ![ec2更改安全组入](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-sfin-websoft9.png)
 4. 编辑入站规则，增加一个新的规则（下图以80为例）
-   ![ec2更改安全组入](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-set80sg-websoft9.png)
+   ![ec2更改安全组入](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-set80sg-websoft9.png)
 3. 点击“保存”按钮即可生效
