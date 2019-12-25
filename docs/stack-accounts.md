@@ -60,3 +60,5 @@ AWS在创建EC2的时候，只能选择采用秘钥对作为验证方式
 ### Windows
 
 用户名是 `Administrator`
+
+以上信息来源于 AWS 官方文档 [连接 Windows](https://docs.aws.amazon.com/zh_cn/AWSEC2/latest/WindowsGuide/EC2_GetStarted.html#ec2-connect-to-instance-windows)
