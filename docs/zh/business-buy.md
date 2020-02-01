@@ -12,6 +12,13 @@ AWS平台中，由于实例采用的是按小时计费，故镜像采用的是�
 * 需要取消镜像订阅，就需要删除对应的实例
 * 实例停止运行，镜像停止计费？
 
+## 选择版本
+
+![](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-subs-odoo-websoft9.png)
+
+![](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-subs-odoooldversion-websoft9.png)
+
+
 ## 费用
 
 AWS云市场中，有免费的镜像，也有收费的镜像。
