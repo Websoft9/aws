@@ -16,8 +16,10 @@
 我们以 “**托管SSH客户端直接来自我们的浏览器**” 为例描述如何连接Linux
 
 1. 参考[此处文档](https://docs.aws.amazon.com/zh_cn/AWSEC2/latest/UserGuide/ec2-instance-connect-set-up.html)，安装EC2 Instance Connect组件（Websoft9镜像默认已安装，忽略此步骤）
+
 2. 登录AWS云控制台，打开：实例->连接，选择第二种连接方式后，点击“Connect”按钮
    ![命令行连接](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-connectmethods-websoft9.png)
+
 3. 将打开一个窗口，并且您连接到实例。
 
 通过命令行连接服务器之后，如下两个最常用的操作示例是需要掌握的：
@@ -27,7 +29,7 @@
 为了安全考虑，用户每一次部署，都会生成唯一的随机数据库密码，存放在服务中。只需如下的一条命令，即可查看
 
 ```shell
-cat /credentials/password.txt
+sudo cat /credentials/password.txt
 
 //运行结果
 MySQL username:root

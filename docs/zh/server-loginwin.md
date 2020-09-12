@@ -1,15 +1,17 @@
 # 连接Windows
 
-AWS上由于只支持[秘钥对](/zh/server-create.md)创建实例，因此在远程连接Windows服务器之前需要获取密码
+AWS 只支持[秘钥对](/zh/server-create.md#秘钥对)创建实例，因此在远程连接 Windows 服务器之前需要上传秘钥对获取密码
 
 ## 获取密码
 
-1. 登录AWS控制台，找到需要登录的服务器，点击“连接”在弹出的窗口中点击“Get Password”
-   ![img](http://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-winconnect-websoft9.png)
-2. 上传本地保存的秘钥
-   ![img](http://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-winconnectpw-websoft9.png)
-3. 点击“Descypt Password”之后，会显示密码
-   ![img](http://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-winconnectgpw-websoft9.png)
+1. 登录AWS控制台，找到需要登录的服务器，点击“连接”在弹出的窗口中点击【Get Password】
+   ![AWS Get Password](http://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-winconnect-websoft9.png)
+
+2. 上传创建服务器的时候保存的**私钥**
+   ![AWS upload key pair](http://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-winconnectpw-websoft9.png)
+
+3. 点击【Descypt Password】之后，密码解锁成功，并显示在界面上
+   ![AWS Descypt Password](http://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-winconnectgpw-websoft9.png)
 
 ## 远程桌面连接
 

@@ -10,7 +10,7 @@ module.exports = [
   },
   
   {
-    title: 'EC2-Cloud Server',
+    title: 'EC2 Instances',
     collapsable: false,
     children: [
       '/server-login',
