@@ -24,7 +24,7 @@ AWS平台有一些独有的词汇，下面列出：
 * EC2（Amazon Elastic Compute Cloud），即 Amazon 弹性计算云服务器
 * 实例，即云服务器
 * AWS 管理控制台，即 AWS 的云平台后台系统
-* EC2 Dashboard，即云服务器管理控制台
+* EC2 Dashboard，即 AWS 的云平台后台系统中的 EC2 管理页面
 * S3，即Amazon 的对象存储
 * 映像（AMI），即镜像
 * DNS，即域名系统

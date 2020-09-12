@@ -10,7 +10,7 @@ AWS 只支持[秘钥对](/zh/server-create.md#秘钥对)创建实例，因此在
 2. 上传创建服务器的时候保存的**私钥**
    ![AWS upload key pair](http://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-winconnectpw-websoft9.png)
 
-3. 点击【Descypt Password】之后，密码解锁成功，并显示在界面上
+3. 点击【Decrypt Password】之后，密码解锁成功，并显示在界面上
    ![AWS Descypt Password](http://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-winconnectgpw-websoft9.png)
 
 ## 远程桌面连接
