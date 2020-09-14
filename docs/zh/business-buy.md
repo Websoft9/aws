@@ -6,17 +6,23 @@
 
 订阅=购买，具体的表现形式就是 [部署镜像](/zh/stack-deployment.md)
 
-AWS平台中，由于实例采用的是按小时计费，故镜像采用的是也是按小时计费模式，除此之外没有其他模式。
+AWS平台中，镜像采用按小时或包年计费的方式：
 
+* 客户可选计费方式之一
 * 镜像部署到实例后，实例用多长时间=镜像订阅了多长时间
 * 需要取消镜像订阅，就需要删除对应的实例
-* 实例停止运行，镜像停止计费？
+* 实例停止运行，镜像继续计费
+* 包年计费可退订
 
 ## 选择版本
 
-![](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-subs-odoo-websoft9.png)
+每个商品支持多个版本，默认为最新版本，也可以通过下面的步骤修改版本：
 
-![](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-subs-odoooldversion-websoft9.png)
+1. 选择镜像时，先点击【Previous version】链接
+   ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-subs-odoo-websoft9.png)
+
+2. 通过【Software version】下拉菜单选择你所需的版本
+  ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-subs-odoooldversion-websoft9.png)
 
 
 ## 费用
@@ -47,12 +53,14 @@ Yearly: Yearly images are charged a one-time payment and take effect immediately
 ## 查看和取消
 
 1. 登录AWS控制台
+
 2. 点击右上角的用户名称，下拉菜单下有一个“Your Marketplace Software”项
    ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-yoursb-websoft9.png)
-2. 可以查看和取消所有订阅
+
+3. 可以查看和取消所有订阅
 
 ## EULA
 
-最终用户许可协议（End User Licence Agreement，EULA），指的是一家公司的软件与软件的使用者所达成的协议，此协议一般出现在软件安装时。如果使用者拒绝接受这家公司的EULA，那么便不能安装此软件。
+最终用户许可协议（End User Licence Agreement，EULA），指软件提供商与软件的使用者所达成的协议，此协议一般出现在软件安装时。如果使用者拒绝接受这家公司的EULA，那么便不能安装此软件。
 
 一旦您同意在AWS上使用Websoft9的镜像，即表示您已经接受了我们的[《用户许可协议》](https://support.websoft9.com/docs/legal/zh/eula)

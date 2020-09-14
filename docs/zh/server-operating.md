@@ -12,7 +12,9 @@
 - 终止
 - 自动恢复
 
-终止=删除EC2
+![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-ec2state-websoft9.png)
+
+> 终止=删除EC2
 
 自动恢复的前提，必须启用[CloudWatch功能](https://docs.aws.amazon.com/zh_cn/AWSEC2/latest/UserGuide/ec2-instance-recover.html)，在实例受损（由于发生基础硬件故障或需要 AWS 参与才能修复的问题）时自动恢复实例。
 

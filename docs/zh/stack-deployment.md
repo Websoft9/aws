@@ -48,10 +48,10 @@
    ![选择Websoft9镜像](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-ec2image-websoft9.png)
 
 4. 选择一个你所需的镜像，系统提示订阅，点击【Continue】，开始创建EC2实例
-   ![同意订阅](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-createdec2-imageselected-websoft9.png)
+   ![同意订阅](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-createdec2-imageselected-websoft9.png)
 
 5. 后续动作基本都会要求用户完成：选择实例类型、增加存储、配置安全组、设置秘钥对等设置
-   ![创建EC2](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-createdec2-chooseinstances-websoft9.png)
+   ![创建EC2](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-createdec2-chooseinstances-websoft9.png)
 
 6. 等待几分钟，EC2创建完成后，镜像会作为EC2实例的系统盘启动，即镜像自动部署到实例中
 

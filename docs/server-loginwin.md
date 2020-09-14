@@ -33,4 +33,4 @@ AWS上由于只支持[秘钥对](/zh/server-create.md)创建实例，因此在�
 5. 远程登录后，就可以直接从本地**拷贝**文件，然后**粘贴**文件到服务器上。
    ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/azure/azure-copyfilewin-websoft9.png)
 
-6. 如果需要使用FTP，需要自行安装FTP软件（推荐使用FileZilla Server）
+6. 如果需要使用FTP，需要自行在云服务器上安装 FTP 软件（推荐使用FileZilla Server）
