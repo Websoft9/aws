@@ -1,10 +1,10 @@
 # Manage
 
-下面是一些常见的 EC2 操作
+Some common operations to EC2 are as follows:
 
-## 启动、停止和终止
+## Start, Stop and Terminate
 
-在EC2控制台可以对实例状态进行修改，包括：
+You can change the instance state on EC2 console, including:
 
 - Start
 - Stop
@@ -14,27 +14,28 @@
 
 ![aws EC2 state Websoft9](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-ec2state-websoft9.png)
 
-> 终止=删除EC2
+> Terminate=Delete EC2
 
-自动恢复的前提，必须启用[CloudWatch功能](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-recover.html)，在实例受损（由于发生基础硬件故障或需要 AWS 参与才能修复的问题）时自动恢复实例。
+If you want to automatically recover the instance when it becomes impaired due to an underlying hardware failure or a problem that requires AWS involvement to repair, you need to enable [CloudWatch alarm](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-recover.html) previously.
 
-## 调整配置
+## Instance settings
 
-EC2 的配置可以随时调整，具体操作如下：
+Follow the steps below to change instance type：
 
-1. 登录到AWS控制台，停止实例
+1. Log in AWS console and stop the instance.
 
-2. 依次打开：操作->实例设置->更改实例类型
-   ![调整配置](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-configures-websoft9.png)
+2. Open：Actions-> Instance Settings-> Change Instance Type
+   ![adjust configuration](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-configures-websoft9.png)
 
-3. 选择一个新的配置，启动实例
+3. Complete new settings, then start the instance.
 
-## 获取日志
+## Get system log
 
-EC2控制台可以方便的获取系统日志：
+You can get system log on EC2 console：
 
-1. 登录到AWS控制台，停止实例
-2. 依次打开：操作->实例设置->获取系统日志
-   ![获取系统日志](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-getsyslogs-websoft9.png)
-3. 选择一个新的配置，启动实例
-   ![显示系统日志](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-syslogs-websoft9.png)
+1. Log in AWS console and stop the instance.
+
+2. Open：Actions-> Instance Settings-> Get System Log
+   ![get system log](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-getsyslogs-websoft9.png)
+3. Complete the new settings, then start the instance.
+   ![display system log](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-syslogs-websoft9.png)

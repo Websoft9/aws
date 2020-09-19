@@ -1,21 +1,25 @@
-# 公网IP地址
+# Public IP Address
 
-## 查看
+## View
 
-1. 登录AWS控制台
-2. 打开要查看公网IP的实例，我们会看到 **公有IP** 和 **公有DNS**
-   ![查看公网IP](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-getip-websoft9.png)
-3. 如果实例没有公网IP地址项（或为空），就需要参考下一个小节挂载一个公网IP
+1. Log in AWS console.  
 
-## 挂载
+2. Choose the instance, and you can see the **Public IP** and **Public DNS**.
+   ![View IP](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-getip-websoft9.png)  
 
-当创建的实例没有公网IP地址，只要有空闲（或新购）的公网IP地址，AWS控制台是可以给实例挂载上公网IP地址的。具体操作步骤如下：
+3. If the instance does not have a public IP address entry (or is empty), you need to refer to the next section to mount a public IP address.
 
-1. 登录到AWS控制台
-2. 打开所需的实例，查看：操作->联网->管理IP地址
+
+## Mount
+
+If the created instance does not have a public IP address, as long as there is a free (or newly purchased) public IP address, the AWS console can mount the public network IP address to the instance.The specific steps are as follows: 
+
+1. Log in AWS console.  
+
+2. Choose the instance and open Actions->Networking->Manage IP Addresses.
    ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-manageip-websoft9.png)
 
-3. 在管理IP地址操作栏中，点击“分配弹性IP”
+3. Click "Allocate an Elastic IP".
    ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-assignip-websoft9.png)
 
-4. 根据提示完成后续操作
+4. Follow the prompts to complete the action.

@@ -1,26 +1,25 @@
-# 系统更新
+# Upgrade
 
-更新操作系统，有两种方案。一种是启动AWS控制台**AWS Systems Manager**管理解决方案，另外一种是手动方案。
+There are two options for updating the OS. One is launching **AWS Systems Manager** solution on AWS console, and the other is using the OS's upgrade solution.
 
 ## AWS Systems Manager
 
-AWS提供一套完整的[AWS Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/)解决方案，可以帮助您自动收集软件清单、应用操作系统补丁、创建系统映像以及配置 Windows 和 Linux 操作系统。
+AWS offers [AWS Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/) solution, which can help you automate collecting software inventory, patching applications OS, launching system VMs, and configuring Windows and Linux.
 
-1. Login to AWS Management Console，打开 **System Manager** 服务
+1. Login to AWS Management Console and choose **System Manager** service.
 
-2. 找到【Instances & Nodes】>【Patch Manager】进入相关管理界面
-![启用更新管理](http://libs-websoft9-com.oss-cn-qingdao.aliyuncs.com/Websoft9/DocsPicture/en/aws/aws-sysmupdate-websoft9.png)
+2. Open 【Instances & Nodes】>【Patch Manager】to enter the manage interface.
+![launch system manager](http://libs-websoft9-com.oss-cn-qingdao.aliyuncs.com/Websoft9/DocsPicture/en/aws/aws-sysmupdate-websoft9.png)
 
-3. 根据向导开始更新
+3. Follow the guide to complete upgrading.
 
+## Upgrade by OS
 
-## 系统中更新
+Upgrading by OS is implemented by logging in to the EC2, inputting an update command or an operation update function, which is different from the update management function of the AWS portal.
 
-所谓系统中是指通过登录 EC2，通过输入更新命令或操作更新功能而实现更新，区别于 AWS 门户的更新管理功能。
+### Upgrade Linux 
 
-### Linux更新
-
-Linux 服务器的更新，只需要运行一条更新命令，即可安装大部分更新
+To upgrade Linux OS, you only need to run an update command to install most updates.
 
 ```shell
 #CentOS or Redhat
@@ -30,8 +29,8 @@ sudo yum update -y
 apt update && apt upgrade -y
 ```
 
-实际上，Websoft9 提供的镜像已经将以上更新命令通过计划任务定期执行。
+In fact, the image provided by Websoft9 has periodically executed the above update commands through cron of Linux.
 
-### Windows更新
+### Upgrade Windows
 
-Windows服务器的更新与本地电脑类似，手动找到更新管理程序，设置自动下载自动更新即可。
+The update of the Windows server is similar to that of the local computer. Just Manually find the update management program and set the automatic download and automatic update.

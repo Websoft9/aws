@@ -1,36 +1,36 @@
 # Windows Connect
 
-AWS上由于只支持[秘钥对](/zh/server-create.md)创建实例，因此在远程连接Windows服务器之前需要获取密码
+As AWS requires [key pair](/server-create.md) to launch an instance,you need to get password before connecting to Windows server using Remote Desktop.
 
 ## Access Password
 
-1. 登录AWS控制台，找到需要登录的服务器，点击“连接”在弹出的窗口中点击“Get Password”
+1. Log in AWS console, choose the instance which you want to connect to, click "Connect" and then click "Get Password" in the pop-up window.
    ![aws get password](http://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-winconnect-websoft9.png)
 
-2. 上传本地保存的秘钥
+2. Upload the key pair stored locally.
    ![aws upload key pairs](http://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-winconnectpw-websoft9.png)
 
-3. 点击【Decrypt Password】之后，密码解锁成功，并显示在界面上
-   ![aws Descypt Password](http://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-winconnectgpw-websoft9.png)
+3. Click 【Decrypt Password】, then the password will be displayed on the interface.
+   ![aws Decrypt Password](http://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-winconnectgpw-websoft9.png)
 
 ## Remote Connection
 
-1. 选择一种打开本地电脑远程桌面的方式（三选一）: 
+1. Choose a way to open a local computer remote desktop (three-in-one):
 
-   - 打开 **开始菜单** -> **远程桌面连接**
-   - 打开 **开始菜单**，输入”mstsc“ ，系统会搜索远程桌面连接工具
-   - 通过 **Windows Logo** + **R** 打开系统的命令窗口，输入”mstsc“来启动远程桌面连接工具
+- - Open **Start** -> **Remote Desktop**
+  - Open **Start**, input "mstsc" directly. The system will search for the Remote Desktop
+  - Use the keyboard **Windows Logo** + **R** to start the command windows, and input input "mstsc" to open the Remote Desktop
 
-2. 打开远程桌面连接，输入公网IP地址
+2. Enter the public IP address of the instance in the Remote Desktop Connection dialog box, then click "Show Options".
    ![img](http://libs.websoft9.com/Websoft9/DocsPicture/en/aws/windows-remote.png)
 
-3. 通过更多选项，设置默认用户名，例如”Administrator“，并勾选”允许我保存凭据“
+3. Enter the user name and check "Allow me to save credentials". In this way, you do not need to manually enter the password again when you log on later.
    ![img](http://libs.websoft9.com/Websoft9/DocsPicture/en/aws/windows-remote-login.png)
 
-4. 点击连接，成功后会看到Windows界面
+4.  Click the Connect button to complete connection to the instance.
    ![image.png](http://libs.websoft9.com/Websoft9/DocsPicture/en/aws/azure-windows2019desktop-websoft9.png)
 
-5. 远程登录后，就可以直接从本地**拷贝**文件，然后**粘贴**文件到服务器上。
+5. After logging in remotely, you can **copy** the file directly from the local and **paste** the file to the server.
    ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/azure/azure-copyfilewin-websoft9.png)
 
-6. 如果需要使用FTP，需要自行在云服务器上安装 FTP 软件（推荐使用FileZilla Server）
+6. If you want to use FTP, you need to install the FTP software yourself (Recommended to use FileZilla Server)

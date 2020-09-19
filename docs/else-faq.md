@@ -1,8 +1,9 @@
 # FAQ
 
-#### 实例的登录账号是什么？
+#### What Is the Username of the instance?
 
-密码是用户在创建实例的时候，AWS只支持秘钥对方式。Windows实例的账号名称是`Administrator`，Linux实例的账号名称参考本文档的 [账号密码-操作系统](/zh/stack-accounts.md) 相关章节
+When creating AWS EC2, it only supports key pair for verification. As for user name, Windows server: `Administrator`. Linux server user name,please see [accounts-OS](/stack-accounts.md).
+
 
 #### 数据库账号密码是什么？
 

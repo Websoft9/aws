@@ -1,12 +1,13 @@
-# 安全组
+# Safe Group
 
-安全组是管理EC2端口的功能，端口是服务器上应用程序与外部访问出入访问的通道。下面以**开启80端口为例**，为您介绍安全组的使用
+A security group is a function of managing the EC2 port, which is a channel for access application from external access. Let's take **opening port 80** as an example to introduce you to the use of security groups.
 
-1. 登录AWS控制台，打开EC2->实例
-2. 打开实例下的“描述”标签，然后点击安全组名称
-   ![ec2更改安全组](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-changesg-websoft9.png)
-3. 进入所属安全组的设置后，打开“入站”标签页，点击编辑
-   ![ec2更改安全组入](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-sfin-websoft9.png)
-4. 编辑入站规则，增加一个新的规则（下图以80为例）
-   ![ec2更改安全组入](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-set80sg-websoft9.png)
-3. 点击“保存”按钮即可生效
+1. Log in AWS console and open EC2->instances.  
+
+2. Open "Description" and then click the name of Security groups.
+   ![ec2 edit security group](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-changesg-websoft9.png)
+3. Enter the setting interface, click 【Inbound】and click "Edit"
+   ![ec2 edit](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-sfin-websoft9.png)
+4. Edit inbound rule and add a new one.
+   ![ec2 edit rule](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-set80sg-websoft9.png)
+3. Save it.

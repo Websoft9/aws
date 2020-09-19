@@ -1,46 +1,52 @@
 # Volumes(Disk)
 
-对于AWS平台来说，卷（磁盘）可以是单独的一种计算资源（单独创建、单独计费、单独管理等），同时也可以被集成到服务器实例，作为其中的一个组件。
+For AWS, volume can be a separate computing resource (created separately, billed separately, managed separately, etc.) and can be integrated into an instance as a component.
 
-## 增加卷
+## Create Volume
 
-1. 登录AWS云控制台，打开EC2 Dashboard
+1. Log in AWS console and open EC2 Dashboard.
 
-2. 点开ELASTIC BLOCK STORE下的“卷”操作，点击“创建卷”
-   ![创建卷](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-createvolume-websoft9.png)
+2. Open ELASTIC BLOCK STORE->Volumes to create volume.
+   ![create volume](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-createvolume-websoft9.png)
    
-3. 设置卷类型，大小等，确认无误后开始创建
-   ![设置卷规格](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-createvolume2-websoft9.png)
+3. Complete volume type, size and other settings, then check before creating.
+   ![volume settings](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-createvolume2-websoft9.png)
    
-4. 将创建好的卷，挂载到EC2实例
-   ![挂载卷](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-volumeaddec2-1-websoft9.png)
+4. Attach the volume created to the instance.
+   ![attach volume](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-volumeaddec2-1-websoft9.png)
    
-   ![挂载卷](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-volumeaddec2-2-websoft9.png)
+   ![attach volume](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-volumeaddec2-2-websoft9.png)
    
-5. 登录到EC2实例，完成初始化磁盘操作，使卷可用：
-    - Windows, 请参考AWS官方文档 [使 Amazon EBS 卷可在 Windows 上使用](https://docs.aws.amazon.com/zh_cn/AWSEC2/latest/WindowsGuide/ebs-using-volumes.html)
-    - Linux，请参考请参考文档 [使 Amazon EBS 卷可在 Linux 上使用](https://docs.aws.amazon.com/zh_cn/AWSEC2/latest/UserGuide/ebs-using-volumes.html) 
+5. log in to the instance, and complete volume initialization to make it available.
+    - Windows, refer to AWS official document [Making an Amazon EBS volume available for use on Windows](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/ebs-using-volumes.html)
+    - Linux, refer to AWS official document [Making an Amazon EBS volume available for use on Linux](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-using-volumes.html) 
 
-6. 完成所有设置后方可使用磁盘
+6. Complete all settings and the volume is available.
 
-## 分离卷
+## Detach Volume
 
-将卷从EC2中解除绑定关系，操作如下
+To detach volume from the instance, refer to the steps below:
 
-1. 登录AWS云控制台，打开EC2 Dashboard
-2. 在左侧菜单中，选择“实例” ，选择具有要分离的数据磁盘的实例，并单击“停止” 
-3. 点开ELASTIC BLOCK STORE下的“卷”操作，对所要解绑的卷进行“Detach Volume”操作
-   ![创建卷](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-detachvolume-websoft9.png)
+1. Log in AWS console and open EC2 Dashboard.  
 
-> 磁盘分离后，会保留在存储中，不会被删除
+2. Open "Instance" and choose the instance which the volume will be detached from, then click "stop".  
 
-## 容量修改
+3. Open ELASTIC BLOCK STORE->Volumes->Actions, choose the volume and click "Delete Volume".
+   ![detach volume](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-detachvolume-websoft9.png)
 
-当卷没有附加到EC2时，可以调整卷的容量
+> The volume detached remains in the storage account and wouldn't be deleted.
 
-1. 登录AWS控制台，依次打开：EC2->ELASTIC BLOCK STORE->卷
-2. 选择所需修改的卷，依次打开：操作->修改
-   ![修改卷](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-ddiskin-websoft9.png)
-3. 设置新的大小
 
-> 大多数情况下，卷只能增加大小，而不能降低大小
+
+## Modify Volume
+
+If the volume is not attached to instance, it can be modified.
+
+1. Log in AWS console and open: EC2->ELASTIC BLOCK STORE->Volumes  
+
+2. Choose the volume need to modify and open: Actions->Modify Volume.
+   ![modify volume](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-ddiskin-websoft9.png)  
+
+3. Set new size.
+
+> In most cases, the volume can only increase in size, but can not decrease.
