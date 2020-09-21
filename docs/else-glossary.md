@@ -1,82 +1,74 @@
-# 词汇表
+# Glossary
 
-#### AWS 控制台
+#### AWS Management Console
 
-AWS控制台，就是用户创建、管理云资源，查看成本费用的后台门户。
+A graphical interface to manage compute, storage, and other cloud resources.
 
 #### AWS CLI
 
-官方解释：AWS Command Line Interface (AWS CLI) 是一种开源工具，让您能够在命令行 Shell 中使用命令与 AWS 服务进行交互。仅需最少的配置，您就可以从常用终端程序中的命令提示符开始使用基于浏览器的 AWS 管理控制台提供的相同功能
-
-通俗解释：AWS CLI是一套客户端命令程序，支持在Windows,Linux,macOS,AWS Cloud Shell上安装，安装完成之后可以使用统一的命令语法操作AWS的云资源，这就是所谓的跨平台。
+AWS Command Line Interface (AWS CLI), is a unified downloadable and configurable tool for managing AWS services. Control multiple AWS services from the command line and automate them through scripts.
 
 #### EC2
 
-EC2=云服务器=实例
+Amazon Elastic Compute Cloud (Amazon EC2) provides scalable computing capacity in the Amazon Web Services (AWS) cloud. Using Amazon EC2 eliminates your need to invest in hardware up front, so you can develop and deploy applications faster. You can use Amazon EC2 to launch as many or as few virtual servers as you need, configure security and networking, and manage storage. Amazon EC2 enables you to scale up or down to handle changes in requirements or spikes in popularity, reducing your need to forecast traffic.
 
 #### DNS
 
-DNS (domain name server)，简单的说就是将域名解析成IP地址的服务
+DNS (domain name server) is a service that routes internet traffic to websites by translating friendly domain names like www.example.com into the numeric IP addresses like 192.0.2.1 that computers use to connect to each other.
 
 #### AWS Marketplace
 
-AWS Marketplace（AWS云市场） 是AWS构建的销售第三方伙伴提供的软件和解决方案的市场平台
+A web portal where qualified partners market and sell their software to AWS customers. AWS Marketplace is an online software store that helps customers find, buy, and immediately start using the software and services that run on AWS.
 
 #### Port
 
-Port（端口）是计算机网络中的通信端点。 这可以是硬件端口，逻辑端口或两者。 TCP和UDP端口由其端口号（0到65535之间的整数）标识
+A port is an endpoint of communication in computer networking. This can be hardware port, a logical port, or both. TCP and UDP ports are identified by their port number (an integer from 0 to 65535).
 
 #### Secure Shell (SSH)
 
-SSH是一种加密网络协议，用于在基于应用层和传输层的不安全网络上安全地操作网络服务。SSH 是目前较可靠，专为远程登录会话和其他网络服务提供安全性的协议
+A cryptographic network protocol for operating network services securely over an unsecured network based at the application layer and transport layer.
 
 #### Secure Shell key pair (SSH key pair)
 
-SSH key pair（秘钥对）可用于远程登EC2实例的身份验证方法。 SSH密钥对是通过加密算法生成的一对密钥：一个密钥是公共可用的（公钥），另一个密钥是保密的（私钥）。
+A set of security credentials that you use to prove your identity electronically. A key pair consists of a private key and a public key.
 
-如果已将公钥放在Linux实例中，则可以使用私钥通过本地计算机或其他没有密码的实例使用SSH命令或相关工具登录实例。
+If the public key has been stored in the Linux instance, you can use the private key to log in to the instance through the local computer or other instances without a password by using SSH commands or related tools.
 
 #### Snapshot
 
-Snapshot（快照）是某个时间点磁盘上的数据副本。 有两种类型的快照，自动快照和用户创建的快照。
+A copy of data on a disk at a certain time point. There are two types of snapshots, automatic snapshots and user-created snapshots.
 
 #### SFTP
 
-SFTP（SSH文件传输协议）是一种安全的文件传输协议。 它运行在SSH协议上。 它支持SSH的完整安全性和身份验证功能。
+SFTP (SSH File Transfer Protocol) is a secure file transfer protocol. It runs over the SSH protocol. It supports the full security and authentication functionality of SSH.
 
 #### Security Group
 
-Security Gourp (安全组) 是用于管理网络端口访问的一序列协议在组合。
+A security group implements access controls for instance, specifying the communication scope of instance. You can define different access control rules for a security group, and these rules take effect for all instance added to this security group. By default, a security group allows all data packets that are sent out from instance in it, and instance in the same security group can access each other.
 
 #### Amazon EBS
 
-Amazon EBS 提供块级别的持久存储卷，您可将这些卷附加到正在运行的实例。可以使用 Amazon EBS 作为主要存储设备，以获取需要频繁更新和精细更新的数据。例如，如果在实例上运行数据库，则建议选用 Amazon EBS 作为存储设备。
+Amazon Elastic Block Store (Amazon EBS) provides block level storage volumes for use with EC2 instances. You can mount these volumes as devices on your instances. EBS volumes that are attached to an instance are exposed as storage volumes that persist independently from the life of the instance. You can create a file system on top of these volumes, or use them in any way you would use a block device (such as a hard drive). You can dynamically change the configuration of a volume attached to an instance.
 
-通俗解释：EBS就是持久性虚拟硬盘
+#### Amazon EC2 instance store
 
-#### Amazon EC2 实例存储
-
-实例存储 为您的实例提供临时性块级存储。此存储位于已物理附加到主机的磁盘上。实例存储是一种理想的临时存储解决方案，非常适合存储需要经常更新的信息，如缓存、缓冲、临时数据和其他临时内容，或者存储从一组实例上复制的数据，如 Web 服务器的负载均衡池。
-
-通俗解释：实例存储就是临时性虚拟硬盘
+An instance store provides temporary block-level storage for your instance. This storage is located on disks that are physically attached to the host computer. Instance store is ideal for temporary storage of information that changes frequently, such as buffers, caches, scratch data, and other temporary content, or for data that is replicated across a fleet of instances, such as a load-balanced pool of web servers.
 
 #### Amazon S3
-Amazon S3 是 Internet 数据的存储库。Amazon S3 提供了可靠、快速和廉价的数据存储基础设施。它的设计理念是通过支持您随时从 Amazon EC2 内部或从网络上的任何地方存储和检索任何数量的数据，从而简化整个网络计算。Amazon S3 以冗余方式跨多个设施在多个设备上存储数据元，允许多个不同的客户端或应用程序线程同时对这些数据元进行读或写操作。您可以使用存储在 Amazon S3 中的冗余数据快速、可靠地恢复实例或应用程序故障。
+Amazon S3 is a repository for internet data. Amazon S3 provides access to reliable, fast, and inexpensive data storage infrastructure. It is designed to make web-scale computing easier by enabling you to store and retrieve any amount of data, at any time, from within Amazon EC2 or anywhere on the web. Amazon S3 stores data objects redundantly on multiple devices across multiple facilities and allows concurrent read or write access to these data objects by many separate clients or application threads. You can use the redundant data stored in Amazon S3 to recover quickly and reliably from instance or application failures.
 
-通俗解释：S3就是对象存储服务
+#### Data disk
 
-#### 数据盘
+A data disk is a managed disk that's attached to an instance to store application data, or other data you need to keep. Data disks are registered as SCSI drives and are labeled with a letter that you choose. Each data disk has a maximum capacity of 32,767 gibibytes (GiB). The size of the instance determines how many data disks you can attach to it and the type of storage you can use to host the disks.
 
-数据盘区别于系统盘，故名思议是用于存放数据的硬盘
+#### OS disk
 
-#### 系统盘
-
-系统盘故名思议是用于启动操作系统的磁盘，同时只要容量足够，系统盘也可以存放数据
+Every instance has one attached operating system disk. That OS disk has a pre-installed OS, which was selected when the instance was created. This disk has a maximum capacity of 2,048 GiB.
 
 #### Route 53
 
-即AWS的域名注册与管理服务
+A web service you can use to create a new DNS service or to migrate your existing DNS service to the cloud.
 
-#### 卷
+#### Volume
 
-即磁盘
+A fixed amount of storage on an instance. It's the same with disk.

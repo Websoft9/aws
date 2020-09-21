@@ -1,21 +1,21 @@
-# 故障处理
+# Troubleshooting
 
-下面列出最常见的故障或设置错误导致的问题。
+Below are the most common problems caused by failures or setup errors.
 
-如果您已经明确问题原因是云服务器产生的，那么请直接阅读[AWS实例故障排查](https://docs.aws.amazon.com/zh_cn/AWSEC2/latest/UserGuide/ec2-instance-troubleshoot.html)。
+If you have made it clear that the problem is caused by EC2, please view [Troubleshooting EC2 instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-troubleshoot.html).
 
-#### SFTP无法登录？
+#### Can't connect SFTP?
 
-检查账号和密码是正确，请保证[服务器安全组](/zh/network-safegroup.md)的22端口是开启的
+Check that the account number and password are correct. Please ensure that port 22 of [Server security group](/network-safegroup.md) is enabled.
 
-#### Windows远程桌面连接失败？
+#### Windows Remote Desktop Connection failed?
 
-检查账号和密码是正确，请保证[服务器安全组](/zh/network-safegroup.md)的3389端口是开启的
+Check that the account number and password are correct. Please ensure that port 3389 of [Server security group](/network-safegroup.md) is enabled.
 
-#### 实例无法重启？
+#### Can't restart the instance?
 
-请联系AWS官方修复
+Please contact AWS Official for repair.
 
-#### http://公网IP 无法打开软件的初始化界面？
+#### Http://public IP can not open the software initialization interface?
 
-检查是否安装了所需的软件，请保证[服务器安全组](/zh/network-safegroup.md)的80端口是开启的
+Check if the required software is installed, please ensure that port 80 of [Server Security Group](/network-safegroup.md) is enabled.

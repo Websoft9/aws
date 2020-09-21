@@ -41,7 +41,7 @@ When creating AWS EC2, it only supports key pair for verification.
 
 ![Key pair](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-ec2createpw-websoft9.png)
 
-Additionally, there is  different username for different OS and different distributions.
+Additionally, there is different username for different OS and different distributions.
 
 ### Linux
 
