@@ -23,15 +23,15 @@ The AWS platform has some special terms, listed below:
 
 * EC2: Amazon Elastic Compute Cloud
 * Instances is the same with Cloud Server.
-* AWS Management Console: administrator console of AWS Cloud Platform
-* EC2 Dashboard: management page in the AWS Management Console
+* AWS Management Console: Administrator console of AWS Cloud Platform
+* EC2 Dashboard: Management page of the AWS Management Console
 * S3: Amazon Simple Storage Service, is the object storage of Amazon.
 * AMI: Amazon Machine Image
-* DNS: domain name system
-* Route 53 is Amazon DNS web service for domain registering and management.
-* Volume: tha same with Disk
+* DNS: Domain Name System
+* Route 53: An Amazon DNS web service for domain registering and management.
+* Volume: The same with Disk
 
-For more terms, refer to the chapter [《AWS Terms》](/else-glossary.md) of this documentation
+For more terms, refer to the chapter [*AWS Terms*](/else-glossary.md) of this documentation
 
 ## Improvement
 

@@ -16,7 +16,8 @@ Connect to the instance by using SSH and run the command `sudo cat /credentials/
 
 #### Windows
 
-For Windows, the database password is stored in the file of your instance: *`c:/credentials/password.txt`*
+For Windows, the database password is stored in the file of your instance: 
+ *`c:/credentials/password.txt`*
 
 You can also find the shortcut for password file from the Windows Desktop.
 

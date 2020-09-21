@@ -1,8 +1,8 @@
 # Marketplace
 
-AWS Marketplace provides access and information on solutions and services available from AWS and our partners. Customers (IT professionals and developers) can discover and buy cloud software solutions built on or built for AWS. 
+AWS Marketplace provides access and information on solutions and services available from AWS and partners. Customers (IT professionals and developers) can discover and buy cloud software solutions built on or built for AWS. 
 
-Websoft9 is Partner of AWS Marketplace. We have published hundreds of images on AWS for user to deploy open source software in a simple way.
+Websoft9 is a partner of AWS Marketplace. We have published hundreds of images on AWS for user to deploy open source software in a simple way.
 
 
 There are two versions of AWS Marketplace:

@@ -26,12 +26,12 @@ Steps below are about how to launch instance based on image:
 
 ## Key Pair
 
-When launching instance, AWS requires to use key pair to log in. Steps for how to create key Pair are as follows:
+When launching instance, AWS requires key pair to log in. Steps for how to create key Pair are as follows:
 
-1. Log in AWS console, open EC2 Dashboard->NETWORK & SECURITY->key Pairs, and click **Create Key pair**.
+1. Login AWS console, open EC2 Dashboard->NETWORK & SECURITY->Key Pairs, and click **Create Key Pair**.
    ![create key pair](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-createkeyps-websoft9.png)
 
 2. Name the key pair, such as "myKey".
    ![name](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-keypsname-websoft9.png)
    
-3. Store key pair file myKey.pem into the local computer.
+3. Store key pair file **myKey.pem** into the local computer.

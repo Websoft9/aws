@@ -4,7 +4,7 @@ The reason we put snapshots and image together is that there is a certain relati
 
 ## Relationship
 
-Key connect between snapshots and image are as follow:
+Key connection between snapshots and image are as follow:
 
 * A snapshot can be created based on the disk.
 
@@ -21,7 +21,7 @@ Summary: (volume --> snapshot) --> (image - instance)
 
 For AWS, to create Snapshots based on the volume.
 
-1. Log in the Aws console,and open EC2 Dashboard.  
+1. Log in the AWS console and open EC2 Dashboard.  
 
 2. Open ELASTIC BLOCK STORE->Volumes and choose volume to create Snapshot.
    ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-createsnapshot-websoft9.png)
@@ -30,7 +30,7 @@ For AWS, to create Snapshots based on the volume.
 
 ## Create Image
 
-As mentioned before, image can be created based on snapshots, and instance
+As mentioned before, image can be created based on snapshots, and instance.
 
 ### Instance to Image
 

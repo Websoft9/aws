@@ -31,7 +31,7 @@ How to deploy image? There are two methods:
    - Launch from Website
    - Copy to Service Catalog
 
-7. Complete the following steps, which include choosing an instance type, setting VPC, Key Pair and so on.
+7. Complete the following steps, including choosing an instance type, setting VPC, Key Pair and so on.
 
 8. Wait several minutes after completing creating EC2, and the image is started as the system disk of the instance, that is, the image is automatically deployed to the instance.
 
@@ -44,7 +44,7 @@ How to deploy image? There are two methods:
 2. Enter EC2 Dashboard, and click 【Launch Instance】to create Instance.
    ![Launch Instance](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-addec2-websoft9.png)
 
-3. When choosing AMIs, click "View all public and private AMIs and search keyword "websoft9" to see the list of images.
+3. When choosing AMIs, click "View all public and private AMIs" and search keyword "websoft9" to see the list of images.
    ![Choose image of Websoft9](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-ec2image-websoft9.png)
 
 4. Select the image you need and click【Continue】to subscribe.

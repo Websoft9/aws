@@ -6,7 +6,7 @@ Below is the simple guide for subscriptions on AWS Marketplace:
 
 Subscription means buying. When you have completed [image deployment](/stack-deployment.md) on AWS, that means you have a subscription for this image.  
 
-On AWS, costs of image is charged by hour or annually.
+On AWS, costs of image is charged hourly or annually.
 
 * Users may choose charging ways at will.
 * Once the image is used on instance, the image Usage Quantity= Instance Usage Quantity
@@ -39,7 +39,7 @@ Take the Odoo product we released as an example. The Software Cost listed by the
 
 ![Websoft9 pricing](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-mkpricing-websoft9.png)
 
-There are two charging way: Hourly (pay-per-Use) and Annual (pay yearly).
+There are two billing way: Hourly (pay-per-Use) and Annual (pay yearly).
 
 Terms are as follows：
 

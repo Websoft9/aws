@@ -4,7 +4,7 @@ In the AWS platform, after the image deployment is completed, the relevant order
 
 ## Marketplace Console
 
-1. Log in AWS Management Console, and click "AWS Marketplace subscriptions" in "AWS Cost Management".
+1. Log in AWS Management Console and click "AWS Marketplace Subscriptions" in "AWS Cost Management".
    ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-mkconsole-websoft9.png)
 2. Choose one subscription and click "Manage" to start manage.
    ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-mkconsolemanage-websoft9.png)

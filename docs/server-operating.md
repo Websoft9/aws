@@ -16,7 +16,7 @@ You can change the instance state on EC2 console, including:
 
 > Terminate=Delete EC2
 
-If you want to automatically recover the instance when it becomes impaired due to an underlying hardware failure or a problem that requires AWS involvement to repair, you need to enable [CloudWatch alarm](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-recover.html) previously.
+If you want to automatically recover the instance when it becomes impaired due to an underlying hardware failure or a problem that requires AWS involvement to repair, you need to enable [CloudWatch alarms](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-recover.html) previously.
 
 ## Instance settings
 

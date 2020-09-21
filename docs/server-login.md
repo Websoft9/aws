@@ -4,23 +4,23 @@ There are two ways to connect to a Linux server: command line and SFTP.
 
 ## Connect by Command
 
-The Command is the basic operation of the Linux system. AWS supports three ways to connect by Command:
+Command is the basic operation of the Linux system. AWS supports three ways to connect by Command:
 
 | Tool                                                  | Instructions                                                     |
 | ------------------------------------------------------ | ------------------------------------------------------------ |
-| A standalone SSH client                                  | Download [putty](https://putty.org/) and other SSH clients to local computer to connect to Linux |
+| A standalone SSH client                                  | Download [putty](https://putty.org/) and other SSH clients to local computer to connect to Linux. |
 | Hosting SSH client based on my browser (Alpha)               | Connect from AWS console website, the prerequisite is to install [EC2 Instance Connect](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-connect-set-up.html) on your instance. |
 | A Java SSH client directly connected from my browser（Java required） | Directly connect from AWS console website, the prerequisite is to **install Java plugin**. |
 
 
-Taking **Hosting SSH client based on my browser** as an example, Steps for how to connect to a Linux server are as follows:
+Taking **Hosting SSH client based on my browser** as an example, steps for how to connect to a Linux server are as follows:
 
 1. Refer to [Set up EC2 Instance Connect](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-connect-set-up.html) to install EC2 Instance Connect module（For Websoft9 image, the module is installed by default, just skip this step.）
 
-2. Log in AWS EC2 console, open 【Instance】> 【Connect】, choose the second way to connect.
+2. Log in AWS EC2 console, open 【Instance】> 【Connect】and choose the second way to connect.
    ![command line](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-connectmethods-websoft9.png)
 
-3. Click 【Connect】, a window opens and you are connected to the instance.
+3. Click "Connect", a window opens and you are connected to the instance.
 
 After you're connected to the server through command line, the following two most common examples of operations are required.
 
@@ -41,7 +41,7 @@ MySQL Password:@qDg1Vq1!V
 ### Sample2: Enable the root username  
 
 
-For security and regulatory requirements, AWX does not open the Linux root account by default, and only provides users with a common account. If you wish to use the root account, enable it by following the steps below:
+For security and regulatory requirements, AWS does not open the Linux root account by default, and only provides users with a common account. If you wish to use the root account, enable it by following the steps below:
 
 ```shell
 sudo su
@@ -56,7 +56,7 @@ SFTP is an FTP mode that uses the SSH protocol, also known as security-enhanced 
 
 ### Configure WinSCP
 
-1. Download [WinSCP](https://winscp.net/) and instal it, then start it and create a ner connection.
+1. Download [WinSCP](https://winscp.net/eng/docs/start) and install it, then start it and create a new connection.
 
 2. Two verifications of cloud server: **password verification and key-key pair verification**
 
@@ -66,7 +66,7 @@ SFTP is an FTP mode that uses the SSH protocol, also known as security-enhanced 
    - Key-key pair authentication
      ![key-key pair authentication](http://libs.websoft9.com/Websoft9/DocsPicture/en/winscp/winscp-secrets-websoft9.png)
 
-3. You may want to save your session details to a site so you do not need to type them in every time you want to connect. Press Yes button and type site name. 
+3. You may want to save your session details to a site so you do not need to type them in every time you want to connect. Press "Yes" button and type site name. 
    ![Save session](http://libs.websoft9.com/Websoft9/DocsPicture/en/winscp/winscp-sessionsave-websoft9.png)
 
 4. You can see this interface if the connection is valid.
@@ -104,7 +104,7 @@ Under certain specificities, you may need to use [Putty](https://putty.org/) to 
 1. Open the Preferences of WinSCP->Integration->Application, and input the local address of your Putty, click OK.
    ![Putty Address](http://libs.websoft9.com/Websoft9/DocsPicture/en/winscp/websoft9-winscp-putty.png)
 
-2. After completing the integration, you only need to open the Putty through window shortcut of Winscp.
+2. After completing the integration, you only need to open the Putty through Winscp's window shortcut. 
    ![open window on WinSCP](http://libs.websoft9.com/Websoft9/DocsPicture/en/winscp/websoft9-winscp-puttyopen.png)
 
 > Opening a Putty operation via Winscp is no different than opening a putty directly.

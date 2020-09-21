@@ -1,4 +1,4 @@
-# Volumes(Disk)
+# Volumes (Disk)
 
 For AWS, volume can be a separate computing resource (created separately, billed separately, managed separately, etc.) and can be integrated into an instance as a component.
 
@@ -17,9 +17,9 @@ For AWS, volume can be a separate computing resource (created separately, billed
    
    ![attach volume](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-volumeaddec2-2-websoft9.png)
    
-5. log in to the instance, and complete volume initialization to make it available.
-    - Windows, refer to AWS official document [Making an Amazon EBS volume available for use on Windows](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/ebs-using-volumes.html)
-    - Linux, refer to AWS official document [Making an Amazon EBS volume available for use on Linux](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-using-volumes.html) 
+5. Log in to the instance, and complete volume initialization to make it available.
+    - For Windows, view official document [Making an Amazon EBS volume available for use on Windows](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/ebs-using-volumes.html)
+    - For Linux, view official document [Making an Amazon EBS volume available for use on Linux](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-using-volumes.html) 
 
 6. Complete all settings and the volume is available.
 

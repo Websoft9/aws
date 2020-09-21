@@ -2,7 +2,7 @@
 
 General skill such as applying for a domain name and resolving domain names will not discussed in this document.
 
-Here we introduce a more useful domain name feature of AWS: AWS provides DNS services for each instance.
+Here we introduce a more useful domain feature of AWS: AWS provides DNS services for each instance.
 
 ## DNS for EC2
 
