@@ -29,9 +29,9 @@ To detach volume from the instance, refer to the steps below:
 
 1. Login to AWS console and open EC2 Dashboard.  
 
-2. Open 【Instances】 and choose the instance which the volume will be detached from, then click 【Stop】.  
+2. Open 【Instances】, choose the instance from which the volume will be detached and click 【Stop】.  
 
-3. Open 【ELASTIC BLOCK STORE】>【Volumes】>【Actions】, choose the volume and click 【Delete Volume】.
+3. Open【ELASTIC BLOCK STORE】>【Volumes】, choose the volume and click 【Detach Volume】.
    ![detach volume](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-detachvolume-websoft9.png)
 
 > The volume detached remains in the storage account and wouldn't be deleted.
