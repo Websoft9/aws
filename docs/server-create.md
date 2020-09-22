@@ -8,13 +8,13 @@ Steps below are about how to launch instance based on image:
 
 ## Create EC2
 
-1. Log in AWS Management Console, and click "EC2".
+1. Login to AWS Management Console, and click 【EC2】.
    ![log in](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-ec2-websoft9.png)
 
 2. Enter EC2 Dashboard, and click 【Launch Instance】to create Instance.
    ![launch instance](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-addec2-websoft9.png)
 
-3. When choosing AMIs, click "View all public and private AMIs and search keyword "websoft9" to see the list of images.
+3. When choosing AMIs, click 【View all public and private AMIs】 and search keyword "websoft9" to see the list of images.
    ![choose image of Websoft9](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-ec2image-websoft9.png)
 
 4. Select the image you need.
@@ -28,7 +28,7 @@ Steps below are about how to launch instance based on image:
 
 When launching instance, AWS requires key pair to log in. Steps for how to create key Pair are as follows:
 
-1. Login AWS console, open EC2 Dashboard->NETWORK & SECURITY->Key Pairs, and click **Create Key Pair**.
+1. Login to AWS console, open 【EC2 Dashboard】>【NETWORK & SECURITY】>【Key Pairs】and click 【Create Key Pair】.
    ![create key pair](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-createkeyps-websoft9.png)
 
 2. Name the key pair, such as "myKey".

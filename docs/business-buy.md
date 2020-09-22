@@ -52,9 +52,9 @@ Yearly: Yearly images are charged a one-time payment and take effect immediately
 
 ## View and Cancel
 
-1. Log in AWS console.
+1. Login to AWS console.
 
-2. Click the users name and choose "Your Marketplace Software" in the drop-down menu.
+2. Click the users name and choose 【Your Marketplace Software】 in the drop-down menu.
    ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-yoursb-websoft9.png)
 
 3. View and cancel subscriptions.

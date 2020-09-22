@@ -21,9 +21,9 @@ Summary: (volume --> snapshot) --> (image - instance)
 
 For AWS, to create Snapshots based on the volume.
 
-1. Log in the AWS console and open EC2 Dashboard.  
+1. Login to the AWS console and open EC2 Dashboard.  
 
-2. Open ELASTIC BLOCK STORE->Volumes and choose volume to create Snapshot.
+2. Open 【ELASTIC BLOCK STORE】>【Volumes】 and choose volume to create Snapshot.
    ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-createsnapshot-websoft9.png)
 
 3. Name the snapshot before creating.
@@ -34,17 +34,17 @@ As mentioned before, image can be created based on snapshots, and instance.
 
 ### Instance to Image
 
-1. log in AWS console.  
+1. Login to AWS console.  
 
-2. Choose the instance, and open Actions->Image->Create image
+2. Choose the instance, and open 【Actions】>【Image】>【Create image】.
 ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-ec2toimage-websoft9.png)   
 
 3. Follow the prompts to complete it.
 
 ### Snapshots to Image
 
-1. Log in the Aws console,and open EC2 Dashboard.  
+1. Login to the Aws console and open EC2 Dashboard.  
 
-2. Open ELASTIC BLOCK STORE->Create Snapshot and list all snapshots.
+2. Open 【ELASTIC BLOCK STORE】>【Create Snapshot】 and list all snapshots.
 3. Choose from the list of snapshots and create image based on it.
    ![Snapshots](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-snapshot-websoft9.png)

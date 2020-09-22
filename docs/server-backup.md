@@ -12,9 +12,9 @@ There are two entries to create backups on AWS console:
 
 ### Automatic Backup
 
-1. Log in AWS console.  
+1. Login to AWS console.  
 
-2. Open：EC2->ELASTIC BLOCK STORE->Lifecycle Manager to create Snapshot lifecycle policy.
+2. Open【EC2】>【ELASTIC BLOCK STORE】>【Lifecycle Manager】>【Create Snapshot Lifecycle Policy】.
     ![Snapshot lifecycle policy](http://libs-websoft9-com.oss-cn-qingdao.aliyuncs.com/Websoft9/DocsPicture/en/aws/aws-snapshotauto-websoft9.png)  
 
 3. Follow the prompts to complete the settings.
@@ -23,9 +23,9 @@ There are two entries to create backups on AWS console:
 
 Steps for manual snapshot on demand are as follows:
 
-1. Log in AWS console and open EC2 Dashboard.  
+1. Login to AWS console and open EC2 Dashboard.  
 
-2. Open ELASTIC BLOCK STORE->Volumes and choose volume to create Snapshot.
+2. Open 【ELASTIC BLOCK STORE】>【Volumes】 and choose volume to 【Create Snapshot】.
    ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-createsnapshot-websoft9.png)  
 
 3. Name the snapshot before creating.
@@ -34,7 +34,7 @@ Steps for manual snapshot on demand are as follows:
 
 AWS Backup is the specific backup service for AWS resources.
 
-1. Log in AWS console, open Services->Resource Groups->AWS Backup->Backup plans.
+1. Login to AWS console, open 【Services】>【Storage】>【AWS Backup】 and create Backup plan.
    ![AWS Backup service](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-backupservices-websoft9.png)
 2. Choose to start from an existing plan and begin to create on-demand backup, that is, to choose the protected resources as you need.
    ![AWS Backup service](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-backupres-websoft9.png) 

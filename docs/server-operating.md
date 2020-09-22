@@ -22,9 +22,9 @@ If you want to automatically recover the instance when it becomes impaired due t
 
 Follow the steps below to change instance type：
 
-1. Log in AWS console and stop the instance.
+1. Login to AWS console and stop the instance.
 
-2. Open：Actions-> Instance Settings-> Change Instance Type
+2. Open 【Actions】>【Instance Settings】>【Change Instance Type】.
    ![adjust configuration](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-configures-websoft9.png)
 
 3. Complete new settings, then start the instance.
@@ -33,9 +33,9 @@ Follow the steps below to change instance type：
 
 You can get system log on EC2 console：
 
-1. Log in AWS console and stop the instance.
+1. Login to AWS console and stop the instance.
 
-2. Open：Actions-> Instance Settings-> Get System Log
+2. Open 【Actions】>【Instance Settings】>【Get System Log】.
    ![get system log](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-getsyslogs-websoft9.png)
 3. Complete the new settings, then start the instance.
    ![display system log](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-syslogs-websoft9.png)

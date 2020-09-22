@@ -17,10 +17,10 @@ Taking **Hosting SSH client based on my browser** as an example, steps for how t
 
 1. Refer to [Set up EC2 Instance Connect](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-connect-set-up.html) to install EC2 Instance Connect module（For Websoft9 image, the module is installed by default, just skip this step.）
 
-2. Log in AWS EC2 console, open 【Instance】> 【Connect】and choose the second way to connect.
+2. Login to AWS EC2 console, open 【Instance】> 【Connect】and choose the second way to connect.
    ![command line](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-connectmethods-websoft9.png)
 
-3. Click "Connect", a window opens and you are connected to the instance.
+3. Click 【Connect】, a window opens and you are connected to the instance.
 
 After you're connected to the server through command line, the following two most common examples of operations are required.
 
@@ -66,7 +66,7 @@ SFTP is an FTP mode that uses the SSH protocol, also known as security-enhanced 
    - Key-key pair authentication
      ![key-key pair authentication](http://libs.websoft9.com/Websoft9/DocsPicture/en/winscp/winscp-secrets-websoft9.png)
 
-3. You may want to save your session details to a site so you do not need to type them in every time you want to connect. Press "Yes" button and type site name. 
+3. You may want to save your session details to a site so you do not need to type them in every time you want to connect. Press 【Yes】 button and type site name. 
    ![Save session](http://libs.websoft9.com/Websoft9/DocsPicture/en/winscp/winscp-sessionsave-websoft9.png)
 
 4. You can see this interface if the connection is valid.
@@ -101,7 +101,7 @@ WinSCP has a built-in command run function. Although the command function is lim
 
 Under certain specificities, you may need to use [Putty](https://putty.org/) to run commands. Since Putty is a command operation interface, you need to enter the root password every time you use it. If the password is complicated, it will make people feel troublesome. In fact, WinSCP can be integrated with Putty. After integration, you can open Putty through WinSCP and log in to the server automatically.
 
-1. Open the Preferences of WinSCP->Integration->Application, and input the local address of your Putty, click OK.
+1. Open the 【Preferences】>【Integration】>【Application】 and input the local address of your Putty, click OK.
    ![Putty Address](http://libs.websoft9.com/Websoft9/DocsPicture/en/winscp/websoft9-winscp-putty.png)
 
 2. After completing the integration, you only need to open the Putty through Winscp's window shortcut. 

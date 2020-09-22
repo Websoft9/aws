@@ -13,7 +13,7 @@ How to deploy image? There are two methods:
 2. Search "Websoft9" and view the list of images of Websoft9.
    ![Search image of Websoft9](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-mkss-websoft9.png)  
 
-3. Click the image you want, then click【Continue to Subscribe】after jump to the product page.
+3. Click the image you want, then click 【Continue to Subscribe】 after jump to the product page.
    ![Subscribe image](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-rs-websoft9.png)
 
 4. Accept Terms and Conditions as the system prompts.
@@ -38,13 +38,13 @@ How to deploy image? There are two methods:
 
 ## Deployment by EC2
 
-1. Log in the AWS Management Console, and click "EC2".
+1. Login to the AWS Management Console, and click 【EC2】.
    ![Log in console](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-ec2-websoft9.png)
 
 2. Enter EC2 Dashboard, and click 【Launch Instance】to create Instance.
    ![Launch Instance](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-addec2-websoft9.png)
 
-3. When choosing AMIs, click "View all public and private AMIs" and search keyword "websoft9" to see the list of images.
+3. When choosing AMIs, click 【View all public and private AMIs】 and search keyword "websoft9" to see the list of images.
    ![Choose image of Websoft9](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-ec2image-websoft9.png)
 
 4. Select the image you need and click【Continue】to subscribe.

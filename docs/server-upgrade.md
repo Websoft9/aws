@@ -6,7 +6,7 @@ There are two options for updating the OS. One is launching **AWS Systems Manage
 
 AWS offers [AWS Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/) solution, which can help you automate collecting software inventory, patching applications OS, launching system VMs, and configuring Windows and Linux.
 
-1. Login to AWS Management Console and choose **System Manager** service.
+1. Login to AWS Management Console and open 【AWS System Manager】 service.
 
 2. Open 【Instances & Nodes】>【Patch Manager】to enter the manage interface.
 ![launch system manager](http://libs-websoft9-com.oss-cn-qingdao.aliyuncs.com/Websoft9/DocsPicture/en/aws/aws-sysmupdate-websoft9.png)
